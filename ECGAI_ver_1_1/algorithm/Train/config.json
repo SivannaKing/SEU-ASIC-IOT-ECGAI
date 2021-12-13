@@ -1,0 +1,18 @@
+{
+    "hidden_node":64,
+
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "MAX_EPOCHS":1000,
+    "patience": 100,
+
+    "train": "./train_32.json",
+    "dev": "./dev_32.json",
+    "shuffle": true,
+    "generator": false,
+    "dropout": 0.3,
+    "fc": false,
+
+    "save_dir": "saved",
+    "log_dir": "logs"
+}

@@ -1,0 +1,23 @@
+{
+
+    "quantization_distribution": [5, 4, 3, 1, 3, 2, 1, 4],
+    "model_dir": "./957_1.hdf5",
+    "eight_bit_model_dir": "./q_957_1_8.hdf5",
+
+    "qmodel_dir": "12_12_1bit.hdf5",
+
+    "hidden_node": 64,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "shuffle": true,
+    "dropout": 0.2,
+    "num_categories": 17,
+
+    "ranking_reverse": false,
+    "score_ratio": 0.007,
+
+
+    "train": "./train_32.json",
+    "dev": "./dev_32.json"
+
+}
