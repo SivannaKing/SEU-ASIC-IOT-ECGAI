@@ -1,4 +1,3 @@
-# run in conda env tf22
 from __future__ import print_function
 from __future__ import division
 from __future__ import absolute_import
@@ -8,7 +7,7 @@ from tensorflow import keras
 import argparse
 import json
 import os
-import time
+import datetime
 import warnings
 
 import network
@@ -16,27 +15,16 @@ import load
 import util
 
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-
-
 def get_filename_for_saving(save_dir):
-    return os.path.join(save_dir, "{val_accuracy:.3f}_{epoch:03d}_{accuracy:.3f}.hdf5")
+    return os.path.join(save_dir, "{epoch:03d}_{accuracy:.3f}_{val_accuracy:.3f}.hdf5")
 
 
-def make_save_dir(dirname):
-    start_time = str(time.asctime(time.localtime(time.time())))
-    save_dir = os.path.join(dirname, start_time)
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-    return save_dir
-
-
-def make_log_dir(dirname):
-    start_time = str(time.asctime(time.localtime(time.time())))
-    save_dir = os.path.join(dirname, start_time)
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-    return save_dir
+def make_folder(dirname):
+    start_time = str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S'))
+    folder_dir = os.path.join(os.getcwd(), dirname, start_time)
+    if not os.path.exists(folder_dir):
+        os.makedirs(folder_dir)
+    return folder_dir
 
 
 def train(args, params):
@@ -49,8 +37,9 @@ def train(args, params):
     print("Training size: " + str(len(train[0])) + " examples.")
     print("Dev size: " + str(len(dev[0])) + " examples.")
 
-    save_dir = make_save_dir(params['save_dir'])
-    log_save = make_log_dir(params['log_dir'])
+    save_dir = make_folder(params['save_dir'])
+    log_dir = make_folder(params['log_dir'])
+
 
     util.save(preproc, save_dir)
 
@@ -61,11 +50,11 @@ def train(args, params):
 
     model = network.build_network(**params)
     model.summary()
-    input("wait")
+    input("display network press anykey to continue...")
 
     stopping = keras.callbacks.EarlyStopping(patience=1000)
     batch_size = params.get("batch_size", 32)
-    logs = keras.callbacks.TensorBoard(log_dir=log_save, histogram_freq=100, batch_size=batch_size)
+    logs = keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=100, batch_size=batch_size)
 
     reduce_lr = keras.callbacks.ReduceLROnPlateau(
         factor=0.1,
@@ -74,7 +63,7 @@ def train(args, params):
 
     checkpointer = keras.callbacks.ModelCheckpoint(
         filepath=get_filename_for_saving(save_dir),
-        monitor='val_accuracy',
+        monitor='val_accuracy',  # NOT val_acc
         save_best_only=True)
 
     if params.get("generator", False):
@@ -105,11 +94,12 @@ def train(args, params):
 
 if __name__ == '__main__':
     warnings.filterwarnings('ignore')
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+    # os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # GPU
 
     parser = argparse.ArgumentParser()
     parser.add_argument("config_file", help="path to config file")
     parser.add_argument("--experiment", "-e", help="tag with experiment name", default="default")
     args = parser.parse_args()
     params = json.load(open(args.config_file, 'r'))
+
     train(args, params)

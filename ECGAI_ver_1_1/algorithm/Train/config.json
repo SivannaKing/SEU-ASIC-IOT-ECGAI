@@ -3,7 +3,7 @@
 
     "learning_rate": 0.001,
     "batch_size": 64,
-    "MAX_EPOCHS":1000,
+    "MAX_EPOCHS":100,
     "patience": 100,
 
     "train": "./train_32.json",

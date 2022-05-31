@@ -4,8 +4,7 @@ Accelerating Neural Network Inference for Arrhymia Detection on FPGA-Based Platf
 
 ## Background
 ---
-自动心律诊断设备系统的推广有助于检测心率失常的早期症状，帮助人们预防心血管疾病。现如今它们大多基于模式识别的机器学习算法，然而这类算法泛化能力较低，无法很好地应用于数量庞大的心律失常患者群体。深度神经网络(DNN)由于具有从数据中学习更高级特征的能力，表现出更好的泛化能力和鲁棒性而开始被逐步推广。然而DNN目前仍存在模型推导过程消耗大量能量、保存模型要求大量内存空间等问题亟需解决。因此，对更高能效的智能心率检测系统的研究在临床诊断，健康状况监测等领域有很大的应用前景。
-
+The popularization of automatic arrhythmia diagnosis equipment system is helpful to detect the early symptoms of arrhythmia and help people prevent cardiovascular diseases. Nowadays, most of them are machine learning algorithms based on pattern recognition. However, these algorithms have low generalization ability and can't be well applied to a large number of arrhythmia patients. Deep neural network (DNN) has been gradually popularized because of its ability to learn more advanced features from data, showing better generalization ability and robustness. However, DNN still has some problems that need to be solved urgently, such as the model derivation process consumes a lot of energy and the storage of the model requires a lot of memory space. Therefore, the research of intelligent heart rate detection system with higher energy efficiency has great application prospects in clinical diagnosis, health monitoring and other fields.
 
 ## Dataset
 ---
