@@ -26,12 +26,13 @@ TODO origin version
 ---
 Contributor : 李支青；黄俊光；吴中行；
 
-在 **ver1.0**ECG检测AI算法 的基础上，修改了**网络结构**，并在FPGA上完成仿真。
+在 **ver1.0**ECG检测AI算法 的基础上，修改了**网络结构**，进行了量化并在FPGA上完成仿真。
 
 * Dataset : MIT-BIH 17 Classes;
 * Training Tools : tensorflow; keras;
 * Quantize Tools : Qkeras; tensorflow lite;
 * RTL Design Tools : Vivado; VCS;
+* FPGA ： Xilinx 7020;
 
 ## ECGAI_ver_2_0
 ---

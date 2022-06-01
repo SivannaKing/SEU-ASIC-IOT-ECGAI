@@ -27,7 +27,6 @@ python data_build.py
 python train.py config.json
 tensorboard --logdir logs
 ```
-TODO 增加规范化注释
   
 ## TFLite Quantization
 ---
