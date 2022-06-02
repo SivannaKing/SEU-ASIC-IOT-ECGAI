@@ -1,1 +1,15 @@
-{"quantization_distribution": "4222222", "model_dir": "../model/FP32_model_210118.hdf5", "qkeras_8bit_model_dir": "../model/Qkeras_8bit_model.h5", "qkeras_model_dir": "../model/Qkeras_model.h5", "log_file_dir": "../model/log", "batch_size": 64, "learning_rate": 0.001, "dropout": 0.3, "num_categories": 17, "shuffle": true, "recorrect": true, "train": "./train_32.json", "dev": "./dev_32.json"}
+{
+    "quantization_distribution": "4222222",
+    "model_dir": "../model/FP32_model_210118.hdf5",
+    "qkeras_8bit_model_dir": "../model/Qkeras_8bit_model.h5",
+    "qkeras_model_dir": "../model/Qkeras_model.h5",
+    "log_file_dir": "../model/log",
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "dropout": 0.3,
+    "num_categories": 17,
+    "shuffle": true,
+    "recorrect": true,
+    "train": "./train_32.json",
+    "dev": "./dev_32.json"
+}

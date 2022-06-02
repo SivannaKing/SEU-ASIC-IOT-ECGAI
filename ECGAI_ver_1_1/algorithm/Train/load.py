@@ -65,6 +65,7 @@ class Preproc:
     '''
     preprocess data
     '''
+
     def __init__(self, ecg, labels):
         '''
         some functions and vars in class
@@ -148,7 +149,7 @@ def load_dataset(data_json):
         labels: with length of step times
     '''
     with open(data_json, 'r') as fid:
-        data = [json.loads(l) for l in fid]
+        data = [json.loads(line) for line in fid]
     labels = []
     ecgs = []
     for d in tqdm.tqdm(data, ncols=100):

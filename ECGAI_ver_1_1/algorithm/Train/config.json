@@ -13,6 +13,6 @@
     "dropout": 0.3,
     "fc": false,
 
-    "save_dir": "saved",
+    "save_dir": "Msaved",
     "log_dir": "logs"
 }

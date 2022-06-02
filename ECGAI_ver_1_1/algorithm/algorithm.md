@@ -14,8 +14,9 @@ Fianlly, we will load low-precision weights into weight_buffer on FPGA.
 
 ## Train
 ---
-train FP32 model
-* save model(.hdf5) in './Train/saved'
+train and evaluate FP32 model
+* save training log in './Train/logs'
+* save model(.hdf5) and preprocess data in './Train/saved'
 
 package|version
 ---|---
@@ -26,6 +27,7 @@ tensorflow|2.5.0
 python data_build.py
 python train.py config.json
 tensorboard --logdir logs
+python evaluate.py config.json
 ```
   
 ## TFLite Quantization
