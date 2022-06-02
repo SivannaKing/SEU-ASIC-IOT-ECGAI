@@ -6,7 +6,7 @@ Arrhythmia Detection Using Algorithm and Hardware Co-design for Neural Netwo
 ---
 The popularization of automatic arrhythmia diagnosis equipment system is helpful to detect the early symptoms of arrhythmia and help people prevent cardiovascular diseases. Nowadays, most of them are machine learning algorithms based on pattern recognition. However, these algorithms have low generalization ability and can't be well applied to a large number of arrhythmia patients. Deep neural network (DNN) has been gradually popularized because of its ability to learn more advanced features from data, showing better generalization ability and robustness. However, DNN/CNN still has some problems that need to be solved urgently, such as the model derivation process consumes a lot of energy and the storage of the model requires a lot of memory space. Therefore, the research of intelligent heart rate detection system with higher energy efficiency has great application prospects in clinical diagnosis, health monitoring and other fields.
 
-## How to use?
+## Installation
 ---
 Download all versions
 ```
@@ -27,40 +27,76 @@ MIT-BIH Arrhythmia Database is available on [physionet](https://www.physionet.or
 
 TODO add MIT-BIH 5 Classses detail
 
-## ECGAI_ver_1_0
----
-Contributor : 李支青；
-
-基线版本ECG检测AI算法
-
-TODO origin version
 
 ## ECGAI_ver_1_1
 ---
 Contributor : 李支青；黄俊光；吴中行；
 
 在**ver1.0**ECG检测AI算法 的基础上，修改了**网络结构**，进行了量化并在FPGA上完成仿真。
+This project aims to design a HW for arrhymia detection on FPGA.
+So we design a CNN first and quantize it(Main Part).
+Fianlly, we will load low-precision weights into weight_buffer on FPGA. 
 
-* Dataset : MIT-BIH 17 Classes;
+* Dataset : 17 Classes ECG signals (1000 fragments) based on MIT-BIH
 * Training Tools : tensorflow; keras;
 * Quantize Tools : Qkeras; tensorflow lite;
 * RTL Design Tools : Vivado; VCS;
 * FPGA ： Xilinx 7020;
 
-## ECGAI_ver_2_0
+## TODO DirTree
 ---
-Contributor : 黄俊光；
 
-实现了幂指数量化的**ECG检测AI算法和电路**，电路还有待进一步测试。
 
-## ECGAI_ver_2_1
+## Train
 ---
-Contributor : 刘子劲；
+train and evaluate FP32 model
+* save training log in './Train/logs'
+* save model(.hdf5) and preprocess data in './Train/saved'
 
-设计基于**二值化**的算法。
+package|version
+---|---
+tensorflow|2.5.0
 
-## ECGAI_ver_2_2
+**How to use** : open terminal in './Train' on windows and run command below.
+```
+python data_build.py
+python train.py config.json
+tensorboard --logdir logs
+python evaluate.py config.json
+```
+  
+## TFLite Quantization
 ---
-Contributor : 苏峰；
+quantize FP32 model to INT8 model with tensorflow lite
+* find best model in Train/saved and copy to model
+* save quantization model(.tflite) in model
 
-设计基于**混合压缩**的算法。
+
+package|version
+---|---
+tf-nightly-cpu|2.3.0
+tensorflow-model-optimization|0.5.0
+
+TODO HOW to use? 
+
+
+## Qkeras Quantization
+---
+quantize FP32 model to low bit quantization model with Qkeras
+* save quantization model(.h5) and quantization log in model
+* need FP32_model.hdf5 in '../model'
+
+package|version
+---|---
+tensorflow|2.3.0
+Qkeraas|0.8.0
+
+install and konw more about Qkeras : [Qkeras](https://github.com/google/qkeras)
+
+run `pip install .`in download folder and ***NOTE Qkeras install requirements!***
+
+
+
+
+## Record
+save experiment included log; quantized model; quantization distribution
