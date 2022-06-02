@@ -39,7 +39,7 @@ TODO origin version
 ---
 Contributor : 李支青；黄俊光；吴中行；
 
-在**ver1.0**ECG检测AI算法 的基础上，修改了**网络结构**，进行了量化并在FPGA上完成仿真。
+The **network structure** is modified, quantified and simulated on FPGA on the basis of **ver1.0**.
 
 * Dataset : MIT-BIH 17 Classes;
 * Training Tools : tensorflow; keras;
@@ -51,16 +51,16 @@ Contributor : 李支青；黄俊光；吴中行；
 ---
 Contributor : 黄俊光；
 
-实现了幂指数量化的**ECG检测AI算法和电路**，电路还有待进一步测试。
+The AI algorithm and circuit of ECG detection with power exponent quantization are realized, and the circuit needs to be further tested.
 
 ## ECGAI_ver_2_1
 ---
 Contributor : 刘子劲；
 
-设计基于**二值化**的算法。
+Design an algorithm based on binarization.
 
 ## ECGAI_ver_2_2
 ---
 Contributor : 苏峰；
 
-设计基于**混合压缩**的算法。
+Design an algorithm based on hybrid compression.
