@@ -97,5 +97,5 @@ if __name__ == "__main__":
     split_ratio = 0.3
 
     label, train, test, seed = load_dataset(data_dir, split_ratio)
-    make_json("train_{}.json".format(seed), label, train)
-    make_json("dev_{}.json".format(seed), label, test)
+    make_json("../train_{}.json".format(seed), label, train)
+    make_json("../dev_{}.json".format(seed), label, test)

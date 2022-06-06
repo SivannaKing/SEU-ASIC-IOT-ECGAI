@@ -6,13 +6,15 @@
     "MAX_EPOCHS":100,
     "patience": 100,
 
-    "train": "./train_32.json",
-    "dev": "./dev_32.json",
+    "train": "../train_32.json",
+    "dev": "../dev_32.json",
     "shuffle": true,
     "generator": false,
+    "input_shape": 3600,
+    "num_categories": 17,
     "dropout": 0.3,
     "fc": false,
 
-    "save_dir": "Msaved",
+    "save_dir": "saved",
     "log_dir": "logs"
 }

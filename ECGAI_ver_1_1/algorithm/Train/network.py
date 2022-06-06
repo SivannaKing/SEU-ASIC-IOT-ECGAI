@@ -121,7 +121,9 @@ def build_network(**params):
     Returns:
         model:
     '''
-    inputs = Input(shape=params['input_shape'], dtype='float32', name='inputs')
+    inputs = Input(shape=[params['input_shape'], 1],
+                   dtype='float32',
+                   name='inputs')
     layer = build_new_network(inputs)
     output = add_fc_layers(layer, **params)
     model = Model(inputs=[inputs], outputs=[output])

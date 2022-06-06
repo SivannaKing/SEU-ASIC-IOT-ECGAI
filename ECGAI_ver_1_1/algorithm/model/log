@@ -1,0 +1,27 @@
+Mon Jun  6 19:50:21 2022
+quantization_distribution:8888888
+model_dir:../model/FP32_model_210118.hdf5
+qkeras_8bit_model_dir:../model/Qkeras_8bit_model.h5
+qkeras_model_dir:../model/Qkeras_model.h5
+log_file_dir:../model/log
+input_shape:3600
+learning_rate:0.001
+dropout:0.3
+num_categories:17
+shuffle:True
+recorrect:False
+train:../train_32.json
+dev:../dev_32.json
+
+quantization_distribution	FP32 acc	qkeras model acc	FP32 acc - qkeras model acc	size(kB)
+[8, 8, 8, 8, 8, 8, 8]			97.37		97.37			0.0				52.34	
+[8, 8, 8, 8, 8, 8, 8]			97.37		97.37			0.0				52.34	
+[8, 8, 8, 8, 8, 8, 8]			97.37		97.37			0.0				52.34	
+[6, 8, 8, 8, 8, 8, 8]			97.37		97.37			0.0				52.31	
+[4, 4, 4, 4, 4, 4, 4]			97.37		58.22			39.14				26.17	
+[6, 8, 8, 6, 8, 8, 6]			97.37		97.04			0.33				48.0	
+[8, 8, 8, 8, 8, 8, 8]			97.37		97.37			0.0				52.34	
+[6, 6, 6, 6, 6, 6, 6]			97.37		96.71			0.66				39.25	
+[6, 6, 6, 6, 6, 6, 6]			97.37		96.71			0.66				39.25	
+[4, 4, 4, 4, 4, 4, 4]			97.37		52.96			44.41				26.17	
+[8, 8, 8, 8, 8, 8, 8]			97.37		97.37			0.0				52.34	

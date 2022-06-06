@@ -27,8 +27,7 @@ def eval_model(model: keras.models, dev_x, dev_y):
         dev_y (_type_): test labels
     """
     loss, dev_score = model.evaluate(dev_x, dev_y, verbose=1)
-    print('model acc:', dev_score)
-    print('model loss:', loss)
+    return loss, dev_score
 
 
 def evaluate(args, params: json):
@@ -47,7 +46,9 @@ def evaluate(args, params: json):
     dev_x, dev_y = preproc.process(*dev)
 
     model = load_model(model_path)
-    eval_model(model, dev_x, dev_y)
+    loss, acc = eval_model(model, dev_x, dev_y)
+    print('loss:', loss)
+    print('ass:', acc)
 
 
 if __name__ == '__main__':

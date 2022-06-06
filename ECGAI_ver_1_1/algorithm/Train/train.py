@@ -74,16 +74,9 @@ def train(args, params):
     preproc = load.Preproc(*train)
     print("Training size: " + str(len(train[0])) + " examples.")
     print("Dev size: " + str(len(dev[0])) + " examples.")
-
     save_dir = make_folder(params['save_dir'])
     log_dir = make_folder(params['log_dir'])
-
     util.save(preproc, save_dir)
-
-    params.update({
-        "input_shape": [3600, 1],
-        "num_categories": len(preproc.classes)
-    })
 
     # build network
     model = network.build_network(**params)
