@@ -46,21 +46,20 @@ This project aims to design a HW for arrhymia detection on FPGA. On the basis of
 
 ## Requirements
 ---
-package version
+Packages NOTE
 * python 3.8
 * tensorflow 2.6.0
-* Qkeraas master(20220606 Update)
+* keras ~= 2.6.0 (You need install lower version manually)
+* Qkeraas master (20220606 Update)
+* protobuf < 3.21.0 (You need install lower version manually)
 
-Clone and know more about Qkeras : [Qkeras](https://github.com/google/qkeras)
-
-run `pip install .`in download folder [qkeras] and ***NOTE Qkeras install requirements!***
+Clone from [Qkeras](https://github.com/google/qkeras) or you can run `pip install .`in download folder [algorithm/Qkeras Quantization/qkeras] in this project. ***NOTE Qkeras install requirements!***
 
 See more PreRequirements in [requirements.txt](./ECGAI_ver_1_1/algorithm/requirements.txt)
 
-
-## Train
+## algorithm
 ---
-train and evaluate FP32 model
+[Train] : train and evaluate FP32 model
 * save training log in './Train/logs'
 * save model(.hdf5) and preprocess data in './Train/saved'
 
@@ -71,24 +70,24 @@ python train.py config.json
 tensorboard --logdir logs
 python evaluate.py config.json
 ```
-
-
-## Qkeras Quantization
----
-quantize FP32 model to low bit quantization model with Qkeras
+[Qkeras Quantization] : quantize FP32 model to low bit quantization model with Qkeras (Auto)
 * save quantization model(.h5) and quantization log in model
 * need FP32_model.hdf5 in '../model'
-**How to use** : open terminal in [Train] on windows and run command below. (You need to install **Qkeras** first.)
+* Use same file in [Train] : load.py network.py evaluate.py util.py
+
+**How to use** : open terminal in [Train] on windows and run command below.
+1. Manual quantification
 ```
 python qevaluate.py config.json
 ```
-TODO 增加自动量化脚本部分
+2. Automatic quantization
+```
+python Auto.py
+python plot.py
+```
+TODO 验证量化结果？？？分层量化结果太好了。量化结果出错，修改keras2qkeras
 
-Use same file in [Train]: load.py network.py evaluate.py util.py
-
-## TFLite Quantization
----
-quantize FP32 model to INT8 model with tensorflow lite
+TODO [TFLite Quantization] : quantize FP32 model to INT8 model with tensorflow lite
 * find best model in Train/saved and copy to model
 * save quantization model(.tflite) in model
 
@@ -98,4 +97,4 @@ python|3.6
 tf-nightly-cpu|2.3.0
 tensorflow-model-optimization|0.5.0
 
-TODO HOW to use? 
+TODO 把requirements.txt重要内容放到README.md里面来。

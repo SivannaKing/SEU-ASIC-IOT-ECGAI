@@ -1,21 +1,33 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+'''
+@AUTHOR     吴中行;
+@EMAIL      wuzhong_xing@126.com
+@TIME&LOG   2021/04/07 - create - 吴中行
+            create basic functions
+@FUNC       Auto run qevaluate.py with different quantization distribution
+'''
 import os
 import json
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from time import sleep
 
 
-# use by main
-# try every QD on basic QD(Quantization Distrubution)
-# eg. basic QD = 8888888
-#          try = 6888888
-#                8688888
-#                ...
-#                8888886
-# QuantizationDistribution :
-# return : Next basic QD, q_acc, acc-q_acc, size
 def traver(QuantizationDistribution):
+    """try every QD on basic QD(Quantization Distrubution)
+    eg. basic QD = 8888888
+             try = 6888888
+                   8688888
+                   ...
+                   8888886
+
+    Args:
+        QuantizationDistribution (_type_): _description_
+
+    Returns:
+        _type_:  Next basic QD, q_acc, acc-q_acc, size
+    """
     sleep(2)  # wait for cpu
 
     # change quantization_distribution  and RUN evaluate.py
@@ -23,26 +35,25 @@ def traver(QuantizationDistribution):
         with open('config.json', 'r') as j:
             config_setting = json.load(j)
         config_setting["quantization_distribution"] = QuantizationDistribution
-        quantization_distribution = list(config_setting["quantization_distribution"])
+        quantization_distribution = list(
+            config_setting["quantization_distribution"])
         quantization_distribution = list(map(int, quantization_distribution))
         if quantization_distribution[i] in [4, 6, 8]:
             quantization_distribution[i] = quantization_distribution[i] - 2
-        config_setting["quantization_distribution"] = ''.join([str(x) for x in quantization_distribution])
+        config_setting["quantization_distribution"] = ''.join(
+            [str(x) for x in quantization_distribution])
         with open('config.json', 'w') as j:
             json.dump(config_setting, j)
-        os.system('python evaluate.py config.json')
+        os.system('python qevaluate.py config.json')
 
     # save 7 log lines in qlist
     # ONE qlist row for ONE Quantization Distrubution
-    qlist = [[],
-             [],
-             [],
-             []]
+    qlist = [[], [], [], []]
     MINAccLoss = 100
     tree = 0
 
     # read log
-    with open('../model/log-rc', 'r') as f:
+    with open('../model/log', 'r') as f:
         lines = f.readlines()
         # 7 layers
         for i in range(7):
@@ -58,7 +69,8 @@ def traver(QuantizationDistribution):
             for x in linelist[0]:
                 if x in ['[', ']', ' ', ',']:
                     linelist[0].remove(x)
-            linelist[0] = ''.join(linelist[0][::2])  # Quantization Distrubution
+            linelist[0] = ''.join(
+                linelist[0][::2])  # Quantization Distrubution
             # str -> float
             linelist[2] = float(linelist[2])  # q_acc
             linelist[3] = float(linelist[3])  # acc - q_acc
@@ -98,7 +110,8 @@ if __name__ == '__main__':
 
     # initialize with 8888888
     Next = traver('8888888')
-    record_arr = np.array(Next)  # record [basic QD, q_acc, acc-q_acc, size] in arr
+    # record [basic QD, q_acc, acc-q_acc, size] in arr
+    record_arr = np.array(Next)
 
     while (True):
         count += 1
@@ -109,7 +122,8 @@ if __name__ == '__main__':
             break
         # record [basic QD, q_acc, acc-q_acc, size] in arr_row
         new_row = np.array(Next)
-        record_arr = np.row_stack((record_arr, new_row))  # Merge into record_arr
+        # Merge into record_arr
+        record_arr = np.row_stack((record_arr, new_row))
 
     # record into df
     labels = ['Quantization Distrubution', 'q_acc', 'acc - q_acc', 'size']

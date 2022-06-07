@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+'''
+@AUTHOR     吴中行;
+@EMAIL      wuzhong_xing@126.com
+@TIME&LOG   2022/04/07 - create - 吴中行
+            create basic functions
+@FUNC       plot size vs q_acc with different quantization distribution
+'''
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -11,8 +20,20 @@ x_smooth = np.linspace(x.min(), x.max(), 300)
 
 
 def func(x, a, b, c, d):
+    """TWO Fitting functions
+
+    Args:
+        x (_type_): _description_
+        a (_type_): _description_
+        b (_type_): _description_
+        c (_type_): _description_
+        d (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     # y = np.log(b + x) + a
-    y = a*x*x*x + b*x*x + c*x +d
+    y = a * x * x * x + b * x * x + c * x + d
     return y
 
 

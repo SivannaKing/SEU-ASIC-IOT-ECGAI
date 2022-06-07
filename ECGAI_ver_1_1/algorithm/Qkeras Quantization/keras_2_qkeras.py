@@ -16,7 +16,7 @@ from __future__ import print_function
 
 from qkeras.utils import model_quantize
 import qkeras
-# import netron
+import netron
 
 
 def make_q_dict(bit_wide_list=[8, 8, 8, 8, 8, 8, 8]):
@@ -53,47 +53,47 @@ def make_q_dict(bit_wide_list=[8, 8, 8, 8, 8, 8, 8]):
     """
     q_dict = {
         "conv1": {
+            # 1 sign + or -
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] -
-                                            1),  # 1 sign + or -
+            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
             "bias_quantizer":
             "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
         },
         "conv2": {
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
+            "quantized_bits({},0,1)".format(bit_wide_list[1] - 1),
             "bias_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
+            "quantized_bits({},0,1)".format(bit_wide_list[1] - 1)
         },
         "conv3": {
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
+            "quantized_bits({},0,1)".format(bit_wide_list[2] - 1),
             "bias_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
+            "quantized_bits({},0,1)".format(bit_wide_list[2] - 1)
         },
         "conv4": {
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
+            "quantized_bits({},0,1)".format(bit_wide_list[3] - 1),
             "bias_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
+            "quantized_bits({},0,1)".format(bit_wide_list[3] - 1)
         },
         "conv5": {
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
+            "quantized_bits({},0,1)".format(bit_wide_list[4] - 1),
             "bias_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
+            "quantized_bits({},0,1)".format(bit_wide_list[4] - 1)
         },
         "conv6": {
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
+            "quantized_bits({},0,1)".format(bit_wide_list[5] - 1),
             "bias_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
+            "quantized_bits({},0,1)".format(bit_wide_list[5] - 1)
         },
         "Dense1": {
             "kernel_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1),
+            "quantized_bits({},0,1)".format(bit_wide_list[6] - 1),
             "bias_quantizer":
-            "quantized_bits({},0,1)".format(bit_wide_list[0] - 1)
+            "quantized_bits({},0,1)".format(bit_wide_list[6] - 1)
         }
     }
     return q_dict
@@ -114,4 +114,4 @@ def converter(model, qmodel_path, BitWideList):
                             transfer_weights=True)
     qkeras.utils.model_save_quantized_weights(qmodel,
                                               qmodel_path)  # only save weight
-    # netron.start(qmodel_path)
+    netron.start(qmodel_path)
