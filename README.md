@@ -1,6 +1,7 @@
 # SEU-ASIC-IOT-ECGAI
 Arrhythmia Detection Using Algorithm and Hardware Co-design for Neural Network Inference Accelerators
 
+使用神经网络推理加速器的算法和硬件协同设计的心律失常检测
 
 ## Background
 ---
@@ -44,9 +45,9 @@ This project aims to design a HW for arrhymia detection on FPGA. On the basis of
 ---
 
 
-## Requirements
+## algorithm
 ---
-Packages NOTE
+Requirements
 * python 3.8
 * tensorflow 2.6.0
 * keras ~= 2.6.0 (You need install lower version manually)
@@ -57,25 +58,23 @@ Clone from [Qkeras](https://github.com/google/qkeras) or you can run `pip instal
 
 See more PreRequirements in [requirements.txt](./ECGAI_ver_1_1/algorithm/requirements.txt)
 
-## algorithm
----
-[Train] : train and evaluate FP32 model
+[**Train**] : train and evaluate FP32 model
 * save training log in './Train/logs'
 * save model(.hdf5) and preprocess data in './Train/saved'
 
-**How to use** : open terminal in [Train] on windows and run command below.
+*How to use* : open terminal in [Train] on windows and run command below.
 ```
 python data_build.py
 python train.py config.json
 tensorboard --logdir logs
 python evaluate.py config.json
 ```
-[Qkeras Quantization] : quantize FP32 model to low bit quantization model with Qkeras (Auto)
+[**Qkeras Quantization**] : quantize FP32 model to low bit quantization model with Qkeras (Auto)
 * save quantization model(.h5) and quantization log in model
 * need FP32_model.hdf5 in '../model'
 * Use same file in [Train] : load.py network.py evaluate.py util.py
 
-**How to use** : open terminal in [Train] on windows and run command below.
+*How to use* : open terminal in [Train] on windows and run command below.
 1. Manual quantification
 ```
 python qevaluate.py config.json
@@ -91,10 +90,8 @@ TODO [TFLite Quantization] : quantize FP32 model to INT8 model with tensorflow l
 * find best model in Train/saved and copy to model
 * save quantization model(.tflite) in model
 
-package|version
----|---
-python|3.6
-tf-nightly-cpu|2.3.0
-tensorflow-model-optimization|0.5.0
-
-TODO 把requirements.txt重要内容放到README.md里面来。
+| package                       | version |
+| ----------------------------- | ------- |
+| python                        | 3.6     |
+| tf-nightly-cpu                | 2.3.0   |
+| tensorflow-model-optimization | 0.5.0   |
