@@ -1,6 +1,8 @@
 # SEU-ASIC-IOT-ECGAI
 Arrhythmia Detection Using Algorithm and Hardware Co-design for Neural Network Inference Accelerators
 
+使用神经网络推理加速器的算法和硬件协同设计的心律失常检测
+
 
 ## Background
 ---
