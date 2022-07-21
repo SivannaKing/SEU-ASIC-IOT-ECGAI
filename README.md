@@ -26,14 +26,14 @@ MIT-BIH Arrhythmia Database is available on [physionet](https://www.physionet.or
 
 17 Classes ECG signals (1000 fragments) based on MIT-BIH is available on [mendeley](https://data.mendeley.com/datasets/7dybx7wyfn/3).
 
-TODO add MIT-BIH 5 Classses detail
+TODO add MIT-BIH 5 Classes detail
 
 
 ## ECGAI_ver_1_1
 ---
 Contributor : 李支青；黄俊光；吴中行；
 
-This project aims to design a HW for arrhymia detection on FPGA. On the basis of ver1.0ECG detection AI algorithm, the network structure was modified. Then we quantized in 8 bits and lower bit width. Fianlly, we loaded 8-bit quantized weights into weight_buffer on FPGA. 
+This project aims to design a HW for arrhythmia detection on FPGA. On the basis of ver1.0ECG detection AI algorithm, the network structure was modified. Then we quantized in 8 bits and lower bit width. Finally, we loaded 8-bit quantized weights into weight_buffer on FPGA. 
 
 * Dataset : 17 Classes ECG signals (1000 fragments) based on MIT-BIH
 * Training Tools : tensorflow; keras;
@@ -45,13 +45,13 @@ This project aims to design a HW for arrhymia detection on FPGA. On the basis of
 ---
 
 
-## algorithm
+## Algorithm
 ---
 Requirements
 * python 3.8
 * tensorflow 2.6.0
 * keras ~= 2.6.0 (You need install lower version manually)
-* Qkeraas master (20220606 Update)
+* Qkeras master (20220606 Update)
 * protobuf < 3.21.0 (You need install lower version manually)
 
 Clone from [Qkeras](https://github.com/google/qkeras) or you can run `pip install .`in download folder [algorithm/Qkeras Quantization/qkeras] in this project. ***NOTE Qkeras install requirements!***
@@ -95,3 +95,23 @@ TODO [TFLite Quantization] : quantize FP32 model to INT8 model with tensorflow l
 | python                        | 3.6     |
 | tf-nightly-cpu                | 2.3.0   |
 | tensorflow-model-optimization | 0.5.0   |
+
+## Documents
+---
+TODO Add files
+
+## Experiments
+---
+TODO Add files
+
+## Papers
+---
+TODO Add files
+
+## PEexploration
+---
+TODO Add files
+
+## Competition
+---
+TODO Add link
