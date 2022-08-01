@@ -66,3 +66,5 @@ Design an algorithm based on binarization.
 Contributor : 苏峰；
 
 Design an algorithm based on hybrid compression.
+
+## 比赛链接
