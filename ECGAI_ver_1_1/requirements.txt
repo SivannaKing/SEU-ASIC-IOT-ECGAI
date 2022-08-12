@@ -19,4 +19,4 @@ prompt_toolkit<=3.0.18
 keras-tuner==1.0.3
 scikit-learn>=0.23.1
 tqdm>=4.48.0
-protobuf<3.21.0
+protobuf<3.20.0
