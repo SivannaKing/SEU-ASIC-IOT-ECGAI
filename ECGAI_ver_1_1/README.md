@@ -46,7 +46,7 @@ python evaluate.py config.json
 *How to use* : open terminal in [Train] on windows and run command below.
 1. Manual quantification
 ```
-python qevaluate.py config.json
+python evaluate.py config.json
 ```
 2. Automatic quantization
 ```
