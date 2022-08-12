@@ -112,6 +112,6 @@ TODO Add files
 ---
 TODO Add files
 
-## Competition
+## Accelerator
 ---
-TODO Add link
+TODO Add description
