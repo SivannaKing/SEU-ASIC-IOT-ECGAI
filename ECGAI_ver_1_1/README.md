@@ -23,7 +23,7 @@ Requirements
 * Qkeras master (20220606 Update)
 * protobuf < 3.20.0 (You need install lower version manually)
 
-Clone from [Qkeras](https://github.com/google/qkeras) or you can run `pip install .`in download folder [algorithm/Qkeras Quantization/qkeras] in this project. ***NOTE Qkeras install requirements!***
+Clone from [Qkeras](https://github.com/google/qkeras) and run `pip install .`in download folder [qkeras] in this project. ***NOTE Qkeras install requirements!***
 
 See more PreRequirements in [requirements.txt](./ECGAI_ver_1_1/algorithm/requirements.txt)
 
@@ -43,10 +43,10 @@ python evaluate.py config.json
 * need FP32_model.hdf5 in '../model'
 * Use same file in [Train] : load.py network.py evaluate.py util.py
 
-*How to use* : open terminal in [Train] on windows and run command below.
+*How to use* : open terminal in [Qkeras Quantization] on windows and run command below.
 1. Manual quantification
 ```
-python evaluate.py config.json
+python qevaluate.py config.json
 ```
 2. Automatic quantization
 ```
