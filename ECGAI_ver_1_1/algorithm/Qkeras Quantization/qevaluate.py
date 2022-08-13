@@ -127,14 +127,14 @@ def find_absmax_weight(qmodel_path):
         for weight in weight_list:
             maxweight = 0
             for index, element in np.ndenumerate(weight):
-                if element >= maxweight:
-                    maxweight = element
+                if abs(element) >= maxweight:
+                    maxweight = abs(element)
             absmax_weight_list.append(maxweight)
 
     else:
         print('NO 8bits model!')
     print(absmax_weight_list)
-    # input('this is absmax weight list')
+    input('this is absmax weight list')
     return absmax_weight_list
 
 
@@ -210,6 +210,7 @@ def qevaluate(dev_x, dev_y, params):
         correct_quant(qmodel_8bit_path, quantization_distribution)
     '''
     qmodel.load_weights(qmodel_path)  # load model weight
+    find_absmax_weight(qmodel_path)
     qmodel.summary()
 
     # evaluate model

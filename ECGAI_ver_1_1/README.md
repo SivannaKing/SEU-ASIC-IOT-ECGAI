@@ -23,7 +23,7 @@ Requirements
 * Qkeras master (20220606 Update)
 * protobuf < 3.20.0 (You need install lower version manually)
 
-Clone from [Qkeras](https://github.com/google/qkeras) and run `pip install .`in download folder [qkeras] in this project. ***NOTE Qkeras install requirements!***
+*How to install Qkeras?* : Clone from [Qkeras](https://github.com/google/qkeras) and run `pip install .`in download folder [qkeras] in this project. ***NOTE Qkeras install requirements!***
 
 See more PreRequirements in [requirements.txt](./ECGAI_ver_1_1/algorithm/requirements.txt)
 
