@@ -21,6 +21,18 @@ git clone --branch [branch/tag] https://github.com/SivannaKing/SEU-ASIC-IOT-ECGA
 git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.git
 ```
 
+## DIR Tree
+
+
+
+## Version Description
+TODO 
+branch 
+
+tag
+
+
+
 ## Dataset
 ---
 MIT-BIH Arrhythmia Database is available on [physionet](https://www.physionet.org/content/mitdb/1.0.0/).
@@ -35,7 +47,7 @@ Contributor : 李支青；
 
 基线版本ECG检测AI算法
 
-TODO origin version
+origin version
 
 ## ECGAI_ver_1_1
 ---
@@ -55,16 +67,18 @@ Contributor : 黄俊光；
 
 The AI algorithm and circuit of ECG detection with power exponent quantization are realized, and the circuit needs to be further tested.
 
+
 ## ECGAI_ver_2_1
----
-Contributor : 刘子劲；
-
-Design an algorithm based on binarization.
-
-## ECGAI_ver_2_2
 ---
 Contributor : 苏峰；
 
 Design an algorithm based on hybrid compression.
+
+
+## ECGAI_ver_3_0
+---
+Contributor : 刘子劲；
+
+Design an algorithm based on binarization.
 
 ## 比赛链接
