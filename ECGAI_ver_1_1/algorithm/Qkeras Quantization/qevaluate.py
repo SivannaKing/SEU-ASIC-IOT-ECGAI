@@ -120,9 +120,8 @@ def find_absmax_weight(qmodel_path):
             weight_list.append(np.array(f['conv5']['conv5']['kernel:0']))
             weight_list.append(np.array(f['conv6']['conv6']['kernel:0']))
             # add 2 array to find the absmax both in kernel and bias
-            weight_list.append(
-                np.array(f['Dense1']['Dense1']['kernel:0']) +
-                np.array(f['Dense1']['Dense1']['bias:0']))
+            weight_list.append(np.array(f['Dense1']['Dense1']['kernel:0']))
+            weight_list.append(np.array(f['Dense1']['Dense1']['bias:0']))
 
         for weight in weight_list:
             maxweight = 0
@@ -219,8 +218,7 @@ def qevaluate(dev_x, dev_y, params):
     print('FP32 model acc:', dev_score)
     print('quantization_distribution:', quantization_distribution)
     print('Qkeras model acc:', q_dev_score)
-    print('Qkeras model size:', getsize(qmodel, quantization_distribution),
-          'kB')
+    # print('Qkeras model size:', getsize(qmodel, quantization_distribution), 'kB')
 
     # save score in log file
     if not os.path.exists(log_path):
