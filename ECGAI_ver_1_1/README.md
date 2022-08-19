@@ -56,6 +56,8 @@ python plot.py
 ```
 使用Qkeras量化工具中的 keras2qkeras 的时候，发现部分问题。**q_dict中的quantized_bits并不能实现INT8量化，小数量化也与设置的数值不相符合。**经过实验，这里keras_2_qkeras更加接近定点化。如果要实现1位符号位，2位整数位，5位小数位的8bits量化，需要将"quantization_distribution"设置为"4443334"。这样才能保证，小数是5bits。
 
+TODO 使用Qkeras，直接建立Qkeras模型，再训练的方式量化。
+
 [TFLite Quantization] : quantize FP32 model to INT8 model with tensorflow lite
 * find best model in Train/saved and copy to model
 * save quantization model(.tflite) in model
