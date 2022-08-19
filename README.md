@@ -26,11 +26,9 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
 
 
 ## Version Description
-TODO 
 branch 
 
 tag
-
 
 
 ## Dataset
@@ -39,7 +37,7 @@ MIT-BIH Arrhythmia Database is available on [physionet](https://www.physionet.or
 
 17 Classes ECG signals (1000 fragments) based on MIT-BIH is available on [mendeley](https://data.mendeley.com/datasets/7dybx7wyfn/3).
 
-TODO add MIT-BIH 5 Classses detail
+TODO add MIT-BIH 5 Classes detail
 
 ## ECGAI_ver_1_0
 ---
