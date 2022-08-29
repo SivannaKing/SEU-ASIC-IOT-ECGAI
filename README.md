@@ -22,13 +22,42 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
 ```
 
 ## DIR Tree
-
+- [SEU-ASIC-IOT-ECGAI](#seu-asic-iot-ecgai)
+  - [## Background](#-background)
+  - [## Installation](#-installation)
+  - [DIR Tree](#dir-tree)
+  - [## Version Description](#-version-description)
+    - [branch](#branch)
+    - [tag](#tag)
+  - [## Dataset](#-dataset)
+  - [## ECGAI_ver_1_0](#-ecgai_ver_1_0)
+  - [## ECGAI_ver_1_1](#-ecgai_ver_1_1)
+  - [## ECGAI_ver_2_0](#-ecgai_ver_2_0)
+  - [## ECGAI_ver_2_1](#-ecgai_ver_2_1)
+  - [## ECGAI_ver_3_0](#-ecgai_ver_3_0)
+  - [## 比赛链接](#-比赛链接)
 
 
 ## Version Description
-branch 
+---
+### branch
+1. ver_1_0
+  
+基线版本ECG检测AI算法，网络结构为6CONV+2FC，量化使用了分层量化。只有算法部分。
 
-tag
+2. ver_1_1
+
+包含算法到硬件实现，并且通过了验证。网络结构为6CONV+1GAP+1FC，量化采用8bit量化。
+
+3. ver_2_0
+
+在ver_1_1的基础上，改进了硬件架构。量化方式采用幂指化。
+
+4. ver_3_0
+
+二值化版本。
+
+### tag
 
 
 ## Dataset
@@ -80,3 +109,4 @@ Contributor : 刘子劲；
 Design an algorithm based on binarization.
 
 ## 比赛链接
+---
