@@ -5,11 +5,9 @@ Arrhythmia Detection Using Algorithm and Hardware Co-design for Neural Netwo
 
 
 ## Background
----
 The popularization of automatic arrhythmia diagnosis equipment system is helpful to detect the early symptoms of arrhythmia and help people prevent cardiovascular diseases. Nowadays, most of them are machine learning algorithms based on pattern recognition. However, these algorithms have low generalization ability and can't be well applied to a large number of arrhythmia patients. Deep neural network (DNN) has been gradually popularized because of its ability to learn more advanced features from data, showing better generalization ability and robustness. However, DNN/CNN still has some problems that need to be solved urgently, such as the model derivation process consumes a lot of energy and the storage of the model requires a lot of memory space. Therefore, the research of intelligent heart rate detection system with higher energy efficiency has great application prospects in clinical diagnosis, health monitoring and other fields.
 
 ## Installation
----
 Download all versions
 ```
 git clone https://github.com/SivannaKing/SEU-ASIC-IOT-ECGAI.git
@@ -23,23 +21,22 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
 
 ## DIR Tree
 - [SEU-ASIC-IOT-ECGAI](#seu-asic-iot-ecgai)
-  - [Background](#-background)
-  - [Installation](#-installation)
+  - [Background](#background)
+  - [Installation](#installation)
   - [DIR Tree](#dir-tree)
-  - [Version Description](#-version-description)
+  - [Version Description](#version-description)
     - [branch](#branch)
     - [tag](#tag)
-  - [Dataset](#-dataset)
-  - [ECGAI_ver_1_0](#-ecgai_ver_1_0)
-  - [ECGAI_ver_1_1](#-ecgai_ver_1_1)
-  - [ECGAI_ver_2_0](#-ecgai_ver_2_0)
-  - [ECGAI_ver_2_1](#-ecgai_ver_2_1)
-  - [ECGAI_ver_3_0](#-ecgai_ver_3_0)
-  - [比赛链接](#-比赛链接)
+  - [Dataset](#dataset)
+  - [ECGAI_ver_1_0](#ecgai_ver_1_0)
+  - [ECGAI_ver_1_1](#ecgai_ver_1_1)
+  - [ECGAI_ver_2_0](#ecgai_ver_2_0)
+  - [ECGAI_ver_2_1](#ecgai_ver_2_1)
+  - [ECGAI_ver_3_0](#ecgai_ver_3_0)
+  - [比赛链接](#比赛链接)
 
 
 ## Version Description
----
 ### branch
 1. ver_1_0
   
@@ -53,7 +50,11 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
 
 在ver_1_1的基础上，改进了硬件架构。量化方式采用幂指化。
 
-4. ver_3_0
+4. ver_2_1 
+
+设计一种基于混合压缩的算法。
+
+5. ver_3_0
 
 二值化版本。
 
@@ -61,26 +62,23 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
 
 
 ## Dataset
----
 MIT-BIH Arrhythmia Database is available on [physionet](https://www.physionet.org/content/mitdb/1.0.0/).
 
 17 Classes ECG signals (1000 fragments) based on MIT-BIH is available on [mendeley](https://data.mendeley.com/datasets/7dybx7wyfn/3).
 
 TODO add MIT-BIH 5 Classes detail
 
+
 ## ECGAI_ver_1_0
----
 Contributor : 李支青；
 
-基线版本ECG检测AI算法
+基线版本ECG检测AI算法，网络结构为6CONV+2FC，量化使用了分层量化。只有算法部分。
 
-origin version
 
 ## ECGAI_ver_1_1
----
 Contributor : 李支青；黄俊光；吴中行；
 
-The **network structure** is modified, quantified and simulated on FPGA on the basis of **ver1.0**.
+包含算法到硬件实现，并且通过了验证。网络结构为6CONV+1GAP+1FC，量化采用8bit量化。
 
 * Dataset : MIT-BIH 17 Classes;
 * Training Tools : tensorflow; keras;
@@ -88,25 +86,23 @@ The **network structure** is modified, quantified and simulated on FPGA on the b
 * RTL Design Tools : Vivado; VCS;
 * FPGA ： Xilinx 7020;
 
+
 ## ECGAI_ver_2_0
----
 Contributor : 黄俊光；
 
-The AI algorithm and circuit of ECG detection with power exponent quantization are realized, and the circuit needs to be further tested.
+在ver_1_1的基础上，改进了硬件架构。量化方式采用幂指化。
 
 
 ## ECGAI_ver_2_1
----
 Contributor : 苏峰；
 
-Design an algorithm based on hybrid compression.
+设计一种基于混合压缩的算法。
 
 
 ## ECGAI_ver_3_0
----
 Contributor : 刘子劲；
 
-Design an algorithm based on binarization.
+二值化版本。但是没有完全二值化，有些还是使用了两位(+1, -1, 0)。
+
 
 ## 比赛链接
----
