@@ -1,5 +1,4 @@
 # ECGAI_ver_1_1
----
 Contributor : 李支青；黄俊光；吴中行；
 
 This project aims to design a HW for arrhythmia detection on FPGA. On the basis of ver1.0ECG detection AI algorithm, the network structure was modified. Then we quantized in 8 bits and lower bit width. Finally, we loaded 8-bit quantized weights into weight_buffer on FPGA. 
@@ -10,12 +9,15 @@ This project aims to design a HW for arrhythmia detection on FPGA. On the basis 
 * RTL Design Tools : Vivado; VCS;
 * FPGA ： Xilinx 7020;
 
+---
 ## TODO DirTree
+
 ---
+## Accelerator
+TODO Add description
 
-
+---
 ## Algorithm
----
 Requirements
 * python 3.8
 * tensorflow 2.6.0
@@ -68,24 +70,20 @@ TODO 使用Qkeras，直接建立Qkeras模型，再训练的方式量化。
 | tf-nightly-cpu                | 2.3.0   |
 | tensorflow-model-optimization | 0.5.0   |
 
-## Documents
 ---
+## Documents
 TODO Add files
 训练实验文档
 量化实验文档
 
+---
 ## Experiments
----
 TODO Add files
 
+---
 ## Papers
----
 TODO Add files
 
+---
 ## PEexploration
----
 TODO Add files
-
-## Accelerator
----
-TODO Add description
