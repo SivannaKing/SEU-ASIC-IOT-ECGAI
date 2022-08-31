@@ -42,23 +42,23 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
 ### branch
 1. ver_1_0
   
-基线版本ECG检测AI算法，网络结构为6CONV+2FC，量化使用了分层量化。只有算法部分。
+    基线版本ECG检测AI算法，网络结构为6CONV+2FC，量化使用了分层量化。只有算法部分。
 
 2. ver_1_1
 
-包含算法到硬件实现，并且通过了验证。网络结构为6CONV+1GAP+1FC，量化采用8bit量化。
+    包含算法到硬件实现，并且通过了验证。网络结构为6CONV+1GAP+1FC，量化采用8bit量化。
 
 3. ver_2_0
 
-在ver_1_1的基础上，改进了硬件架构。量化方式采用幂指化。
+    在ver_1_1的基础上，改进了硬件架构。量化方式采用幂指化。
 
 4. ver_2_1 
 
-设计一种基于混合压缩的算法。
+    设计一种基于混合压缩的算法。
 
 5. ver_3_0
 
-二值化版本。
+    二值化版本。
 
 ### tag
 
@@ -68,7 +68,7 @@ MIT-BIH Arrhythmia Database is available on [physionet](https://www.physionet.or
 
 17 Classes ECG signals (1000 fragments) based on MIT-BIH is available on [mendeley](https://data.mendeley.com/datasets/7dybx7wyfn/3).
 
-TODO add MIT-BIH 5 Classes detail
+TODO Add MIT-BIH 5 Classes detail & programme
 
 ---
 ## ECGAI_ver_1_0
