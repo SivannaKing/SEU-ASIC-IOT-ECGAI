@@ -25,7 +25,7 @@ The information in the header file of the record file includes the related attri
 
 The first line contains two signals with a sampling rate of 360Hz, and the length of each signal is 650,000 sampling points.
 
-The following two lines are the signal technical specification lines, from which it can be seen that both signals are contained in the file format 100.dat, and each signal is stored in a 12-bit compressed format. The gain of both signals is every 200ADC uints/mV, the resolution of ADC is 11 bits, and the zero value of ADC is 1024. The values of the first sampling points of the two signals are 995 and 10,116,500, respectively. The verification numbers of the sampling points are -22131 and 20052, respectively. The input and output can be executed in blocks of any size, because the file content indicates that the values of the two signals are all 0, and the signal description field indicates that the two signals are taken from MLII lead and V5 lead respectively.
+The following two lines are the signal technical specification lines, from which it can be seen that both signals are contained in the file format 100.dat, and each signal is stored in a 12-bit compressed format. The gain of both signals is every 200ADC units/mV, the resolution of ADC is 11 bits, and the zero value of ADC is 1024. The values of the first sampling points of the two signals are 995 and 10,116,500, respectively. The verification numbers of the sampling points are -22131 and 20052, respectively. The input and output can be executed in blocks of any size, because the file content indicates that the values of the two signals are all 0, and the signal description field indicates that the two signals are taken from MLII lead and V5 lead respectively.
 
 The last two lines of the file contain comment strings, in which the first line states the patient's age and gender and recorded data, and the second line lists the patient's medication.
 
@@ -55,50 +55,50 @@ Taking 100.atr as an example, it can be judged that the file is stored in MIT fo
 ![atr](res/atr.png)
 
 **Symbol Table**
-Symbol | Meaning | Noting
---|--|--
-· or N|Normal beat|正常心跳
-L|Left bundle branch block beat|左束支传导阻滞
-R|Right bundle branch block beat|右束支传导阻滞
-A|Atrial premature beat|房性早搏
-a|Aberrated atrial premature beat|异常房性早搏
-J|Nodal (junctional) premature beat|交界性早搏
-S|Supraventricular premature beat|室上性早搏
-V|Premature ventricular contraction|室性早搏
-F|Fusion of ventricular and normal beat|心室搏动与正常搏动融合
-[|Start of ventricular flutter/fibrillation|开始心室扑动/纤颤
-!|Ventricular flutter wave|心室颤振波
-]|End of ventricular flutter/fibrillation|心室扑动/颤动结束
-e|Atrial escape beat|房性逸搏
-j|Nodal (junctional) escape beat|交界性逸搏
-E|Ventricular escape beat|室性逸博
-/|Paced beat|起博心跳
-f|Fusion of paced and normal beat|起搏融合心跳
-x|Non-conducted P-wave (blocked APB)|非传导P波（APB阻塞）
-Q|Unclassifiable beat|无法分类的心跳
-||Isolated QRS-like artifact|独立的伪QRS波群
-------------------|Rhythm annotations appear below the level used for beat annotations:|Rhythm注释出现beats注释的级别下方：
-AB|Atrial bigeminy|房性早搏二联律
-AFIB|Atrial fibrillation|房颤
-AFL|Atrial flutter|心房震颤
-B|Ventricular bigeminy|室性二联
-BII|2° heart block|2°心脏传导阻滞
-IVR|Idioventricular rhythm|室性节律
-N|Normal sinus rhythm|正常窦性心律
-NOD|Nodal (A-V junctional) rhythm|房室结交界性心律
-P|Paced rhythm|起搏心律
-PREX|Pre-excitation (WPW)	
-SBR|Sinus bradycardia|窦性心动过缓
-SVTA|Supraventricular tachyarrhythmia|室上性快速性心律失常
-T|Ventricular trigeminy|心室三叉神经
-VFL|Ventricular flutter|心室扑动
-VT|Ventricular tachycardia|室性心动过速
------------------|Signal quality and comment annotations appear above the level used for beat annotations:|信号质量和评论注释出现 在beats注释级别之上
-qq|Signal quality change: the first character (c' orn’) indicates the quality of the upper signal (clean or noisy), and the second character indicates the quality of the lower signal|信号质量变化：第一个字符（“c”或“n”）表示较高信号的质量（干净或有噪声），第二个字符表示较低信号的质量
-U|Extreme noise or signal loss in both signals: ECG is unreadable|两种信号的极端噪声或信号丢失：ECG不可读
-M (or MISSB)|Missed beat|漏掉的节拍
-P (or PSE)|Pause|暂停
-T (or TS)|Tape slippage|磁带打滑
+Symbol  |                     Meaning                       |Noting
+--------|---------------------------------------------------|-----------------------------
+·/N     |Normal beat                                        |正常心跳
+L       |Left bundle branch block beat                      |左束支传导阻滞
+R       |Right bundle branch block beat                     |右束支传导阻滞
+A       |Atrial premature beat                              |房性早搏
+a       |Aberrated atrial premature beat                    |异常房性早搏
+J       |Nodal (junctional) premature beat                  |交界性早搏
+S       |Supraventricular premature beat                    |室上性早搏
+V       |Premature ventricular contraction                  |室性早搏
+F       |Fusion of ventricular and normal beat              |心室搏动与正常搏动融合
+[       |Start of ventricular flutter/fibrillation          |开始心室扑动/纤颤
+!       |Ventricular flutter wave                           |心室颤振波
+]       |End of ventricular flutter/fibrillation            |心室扑动/颤动结束
+e       |Atrial escape beat                                 |房性逸搏
+j       |Nodal (junctional) escape beat                     |交界性逸搏
+E       |Ventricular escape beat                            |室性逸博
+/       |Paced beat                                         |起博心跳
+f       |Fusion of paced and normal beat                    |起搏融合心跳
+x       |Non-conducted P-wave (blocked APB)                 |非传导P波（APB阻塞）
+Q       |Unclassifiable beat                                |无法分类的心跳
+|       |Isolated QRS-like artifact                         |独立的伪QRS波群
+--------|Annotations appear below                           |注释出现beats注释的级别下方
+AB      |Atrial bigeminy                                    |房性早搏二联律
+AFIB    |Atrial fibrillation                                |房颤
+AFL     |Atrial flutter                                     |心房震颤
+B       |Ventricular bigeminy                               |室性二联
+BII     |2° heart block                                     |2°心脏传导阻滞
+IVR     |Idioventricular rhythm                             |室性节律
+N       |Normal sinus rhythm                                |正常窦性心律
+NOD     |Nodal (A-V junctional) rhythm                      |房室结交界性心律
+P       |Paced rhythm                                       |起搏心律
+PREX    |Pre-excitation (WPW)                               |
+SBR     |Sinus bradycardia                                  |窦性心动过缓
+SVTA    |Supraventricular tachyarrhythmia                   |室上性快速性心律失常
+T       |Ventricular trigeminy                              |心室三叉神经
+VFL     |Ventricular flutter                                |心室扑动
+VT      |Ventricular tachycardia                            |室性心动过速
+--------|Signal quality and comment annotations appear above|信号质量和注释出现在上方
+qq      |The first character c/n indicates the quality of the upper signal (clean or noisy), and the second character indicates the lower signal |信号质量变化：第一个字符(c/n)表示较高信号的质量（干净或有噪声），第二个字符表示较低信号的质量
+U       |Extreme noise or signal loss in both signals       |两种信号的极端噪声或信号丢失
+M/MISSB |Missed beat                                        |漏掉的节拍
+P/PSE   |Pause                                              |暂停
+T/TS    |Tape slippage                                      |磁带打滑
 
 **Tables of beats and rhythms**
 These tables summarize the contents of the database. These tables duplicate some of the contents of the previous section, to which reference should be made for more details. The first two tables list the beat types and rhythms for each half-hour record in its entirety. 
