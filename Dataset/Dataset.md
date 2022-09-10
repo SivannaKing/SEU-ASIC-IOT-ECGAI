@@ -157,7 +157,7 @@ AAMI standard points out that **the accuracy of Q classification is for referenc
 
 MIT-BIH database *VS* ANSL/AAMI EC57:2012
 ![MIT-BIH database VS ANSL/AAMI EC57:2012](res/MIT-BIH_VS_AAMI.png)
-TODO 下载标准原文档或者添加链接。
+See more in *[AAMI EC57-2012 Testing and reporting performance results of cardiac rhythm and ST segment measurement.pdf](./AAMI%20EC57-2012%20Testing%20and%20reporting%20performance%20results%20of%20cardiac%20rhythm%20and%20ST%20segment%20measurement.pdf)*
 
 
 
