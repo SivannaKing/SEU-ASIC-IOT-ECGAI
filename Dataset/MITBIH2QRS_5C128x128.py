@@ -3,56 +3,58 @@
 '''
 @AUTHOR     wzx;
 @EMAIL      wuzhong_xing@126.com
-@TIME&LOG   2022/08/30 - create - wzx
+@TIME&LOG   2022/09/15 - create - wzx
             Initial Commit
-@FUNC       transform origin ECG dataset to 5 classes QRS
+@FUNC       Transform origin ECG dataset to 5 classes QRS 2D 128*128
 '''
 import os
 import wfdb
 import numpy as np
-import csv
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 
-def MITBIH_print(signal_path: str):
-    """Print the label and position of a 0~1000 ECG signal sampling record.
+def quantize(r: np.array, qmax: int, qmin: int = 0) -> np.array:
+    """quantize np.array
 
     Args:
-        signal_path (str): A sample path
+        r (np.array): FP32
+        qmax (int): quantization size
+        qmin (int, optional): quantization size. Defaults to 0.
+
+    Returns:
+        np.array: quantized array
     """
-    signal_annotation = wfdb.rdann(signal_path, "atr", sampfrom=0, sampto=1000)
-    print("symbol: " + str(signal_annotation.symbol))
-    print("sample: " + str(signal_annotation.sample))
-    # result
-    # symbol: ['~', '+', 'N', 'N']
-    # sample: [ 83 229 351 724]
+    S = (np.max(r) - np.min(r)) / (qmax - qmin)
+    Z = np.round(qmax - np.max(r) / S)
+    q = np.round(r / S + Z)
+    return q.astype(int)
 
 
-def MITBIH_plot(signal_path: str):
-    """Draw a sampling record of ECG signal from 0 to 1000, and mark the marked points.
+def signal2img(signal: list[int], height: int):
+    """get ECG grey img
 
     Args:
-        signal_path (str): A sample path
+        signal (list[int]): _description_
+        height (int): value range
+
+    Returns:
+        NDArray: bool array grey img
     """
-    record = wfdb.rdrecord(signal_path,
-                           sampfrom=0,
-                           sampto=1000,
-                           physical=True,
-                           channels=[0])
-    signal_annotation = wfdb.rdann(signal_path, "atr", sampfrom=0, sampto=1000)
-    ECG = record.p_signal
-    plt.plot(ECG)
-
-    for index in signal_annotation.sample:
-        plt.scatter(index, ECG[index], marker='*', s=200)
-    plt.show()
+    img = np.zeros((len(signal), height), dtype=bool)
+    if len(signal) != height:
+        print("NOT SQUARE!")
+    else:
+        for idx, value in enumerate(signal):
+            img[height-value-1, idx] = 1  # flip up and down
+    return img
 
 
-def MITBIH_classify(base_path: str):
-    """19 kinds of signals are divided into 5 categories based on AAMI standard, and the size is 261 1D ECG.
+def MITBIH_classify(base_path: str, QRS_len: int):
+    """19 kinds of signals are divided into 5 categories based on AAMI standard, and the size is 128*128 2D ECG.
 
     Args:
-        base_path (str): 原始数据集路径
+        base_path (str): Original MIT-BIH dataset path
     """
     # 19->5 classes
     AAMI_MIT = {'N': 'Nfe/jnBLR', 'S': 'SAJa', 'V': 'VEr', 'F': 'F', 'Q': 'Q?'}
@@ -112,12 +114,17 @@ def MITBIH_classify(base_path: str):
             index = [i for i, x in enumerate(Label) if x == k]
             Signal_index = Sample[index]
             length = len(record.p_signal)
-            # 截取
-            for site in Signal_index:
-                if 130 < site < length - 130:
-                    ECG_signal = record.p_signal.flatten().tolist()
-                    ECG_signal = ECG_signal[site - 130:site + 130]  # cut off QRS
-                    ECG[str(k)].append(ECG_signal)
+
+            for site in tqdm(Signal_index):
+                if QRS_len // 2 < site < length - QRS_len // 2:
+                    q_ECG_signal = quantize(r=record.p_signal,
+                                            qmax=QRS_len - 1)
+                    ECG_signal = q_ECG_signal.flatten().tolist()
+                    start = site - QRS_len // 2
+                    end = site + QRS_len // 2
+                    ECG_signal = ECG_signal[start:end]  # cut off QRS
+                    ECG_img = signal2img(ECG_signal, height=QRS_len)
+                    ECG[str(k)].append(ECG_img)
 
     for key, value in ECG.items():
         print(f'{key} = {len(value)}')
@@ -127,41 +134,29 @@ def MITBIH_classify(base_path: str):
             if ECG_key in AAMI_MIT_value:
                 AAMI[AAMI_MIT_key].extend(ECG_value)
 
-    # save into 5 scv
+    # save into csv
+    img_base_path = f'./5 classes QRS signals {QRS_len}x{QRS_len}'
+    if os.path.exists(img_base_path):
+        print('folder exist!')
+    else:
+        os.mkdir(img_base_path)
     for key, value in AAMI.items():
-        if os.path.exists('./5 classes QRS signals 130'):
-            print('文件夹存在')
-        else:
-            os.mkdir('./5 classes QRS signals 130')
-        with open(f'./5 classes QRS signals 130/{key}.csv', 'w', newline='\n') as f:
-            writer = csv.writer(f)
-            # Write each piece of data in the list into csv file in turn, separated by commas.
-            # The incoming data is nested lists or tuples in a list, and each list or tuple is the data of each row.
-            writer.writerows(value)
+        np.save(img_base_path + f'/{key}.npy', np.array(value))
 
 
-def QRS_print_plot():
+def QRS_print_plot(QRS_len: int):
     AAMI_key = {'N', 'S', 'V', 'F', 'Q'}
     AAMI = dict()
 
-    def Tolist(x):
-        return list(map(float, x))
-
     for key in AAMI_key:
-        with open(f'./5 classes QRS signals 130/{key}.csv', 'r') as f:
-            reader = csv.reader(f)
-            AAMI[key] = list(map(Tolist, list(reader)))
+        AAMI[key] = np.load(f'./5 classes QRS signals {QRS_len}x{QRS_len}/{key}.npy')
+        print(key, AAMI[key].shape)
 
-    for i in AAMI_key:
-        print(f'{i}={np.array(AAMI[i]).shape}')
-
-    QRS = AAMI['N'][0]
-    plt.plot(QRS)
+    ECG_img = AAMI['V'][100, :, :]
+    plt.imshow(ECG_img, cmap=plt.get_cmap('gray'))
     plt.show()
 
 
 if __name__ == "__main__":
-    # MITBIH_print('./mit-bih-arrhythmia-database-1.0.0/106')
-    MITBIH_plot('./mit-bih-arrhythmia-database-1.0.0/106')
-    # MITBIH_classify('./mit-bih-arrhythmia-database-1.0.0')
-    # QRS_print_plot()
+    MITBIH_classify('./mit-bih-arrhythmia-database-1.0.0', QRS_len=128)
+    QRS_print_plot(QRS_len=128)

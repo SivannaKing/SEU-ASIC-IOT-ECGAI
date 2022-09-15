@@ -111,6 +111,7 @@ The beat tables show the number of beats of each type in each record. The rhythm
 
 [VIEW COMPLETE TABLE](https://www.physionet.org/physiobank/database/html/mitdbdir/tables.htm#allrhythms)
 
+
 ---
 ## 17 classes ECG signals 3600
 Contributor : Paweł Pławiak;
@@ -160,7 +161,6 @@ MIT-BIH database *VS* ANSL/AAMI EC57:2012
 See more in *[AAMI EC57-2012 Testing and reporting performance results of cardiac rhythm and ST segment measurement.pdf](./AAMI%20EC57-2012%20Testing%20and%20reporting%20performance%20results%20of%20cardiac%20rhythm%20and%20ST%20segment%20measurement.pdf)*
 
 
-
 ---
 ## 5 classes ECG signals 3600 -- MITBIH2ECG_5C14C3600.py
 Contributor : 吴中行;
@@ -170,5 +170,18 @@ Run ```python MITBIH2ECG_5C14C3600.py``` first.
 The created database with ECG signals is described below.
 1. The ECG signals contained 5 classes: *F N Q S V* according to **AAMI EC57** standard.
 2. All ECG signals were recorded at 3600 samples in 10s with 360Hz frequency.
+3. Only signals derived from one lead, the MLII, were used.
+4. Data are in .npy format.
+
+
+---
+## 5 classes ECG signals 128x128 -- MITBIH2ECG_5C128x128.py
+Contributor : 吴中行;
+
+Run ```python MITBIH2ECG_5C128x128.py``` first.
+
+The created database with ECG signals is described below.
+1. The ECG signals contained 5 classes: *F N Q S V* according to **AAMI EC57** standard.
+2. All ECG signals were recorded as 128x128 *grey img* of *QRS* wave.
 3. Only signals derived from one lead, the MLII, were used.
 4. Data are in .npy format.
