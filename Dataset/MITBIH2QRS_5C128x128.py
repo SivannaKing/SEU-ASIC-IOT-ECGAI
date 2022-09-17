@@ -55,6 +55,7 @@ def MITBIH_classify(base_path: str, QRS_len: int):
 
     Args:
         base_path (str): Original MIT-BIH dataset path
+        QRS_len (int): img size
     """
     # 19->5 classes
     AAMI_MIT = {'N': 'Nfe/jnBLR', 'S': 'SAJa', 'V': 'VEr', 'F': 'F', 'Q': 'Q?'}
@@ -145,6 +146,11 @@ def MITBIH_classify(base_path: str, QRS_len: int):
 
 
 def QRS_print_plot(QRS_len: int):
+    """plot a QRS img
+
+    Args:
+        QRS_len (int): img size
+    """
     AAMI_key = {'N', 'S', 'V', 'F', 'Q'}
     AAMI = dict()
 
@@ -158,5 +164,5 @@ def QRS_print_plot(QRS_len: int):
 
 
 if __name__ == "__main__":
-    MITBIH_classify('./mit-bih-arrhythmia-database-1.0.0', QRS_len=128)
+    # MITBIH_classify('./mit-bih-arrhythmia-database-1.0.0', QRS_len=128)
     QRS_print_plot(QRS_len=128)
