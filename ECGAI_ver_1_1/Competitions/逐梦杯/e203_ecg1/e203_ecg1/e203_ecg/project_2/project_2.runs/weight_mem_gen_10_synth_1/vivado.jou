@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Nov 29 14:55:36 2021
+# Process ID: 11916
+# Current directory: D:/FPGA/e203_ecg/e203_ecg/project_2/project_2.runs/weight_mem_gen_10_synth_1
+# Command line: vivado.exe -log weight_mem_gen_10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source weight_mem_gen_10.tcl
+# Log file: D:/FPGA/e203_ecg/e203_ecg/project_2/project_2.runs/weight_mem_gen_10_synth_1/weight_mem_gen_10.vds
+# Journal file: D:/FPGA/e203_ecg/e203_ecg/project_2/project_2.runs/weight_mem_gen_10_synth_1\vivado.jou
+#-----------------------------------------------------------
+source weight_mem_gen_10.tcl -notrace

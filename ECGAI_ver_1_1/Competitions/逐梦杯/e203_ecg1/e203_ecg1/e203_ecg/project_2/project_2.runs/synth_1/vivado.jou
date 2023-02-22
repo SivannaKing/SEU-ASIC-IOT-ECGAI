@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Sep  9 16:35:55 2021
+# Process ID: 18376
+# Current directory: E:/project/vivado/e203/demo_nice/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: E:/project/vivado/e203/demo_nice/project_1/project_1.runs/synth_1/system.vds
+# Journal file: E:/project/vivado/e203/demo_nice/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace

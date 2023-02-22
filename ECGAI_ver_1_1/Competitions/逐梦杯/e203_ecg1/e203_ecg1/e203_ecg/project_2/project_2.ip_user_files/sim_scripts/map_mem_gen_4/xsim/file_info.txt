@@ -1,0 +1,2 @@
+map_mem_gen_4.v,verilog,xil_defaultlib,../../../../ECG_acc9.srcs/sources_1/ip/map_mem_gen_4/sim/map_mem_gen_4.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

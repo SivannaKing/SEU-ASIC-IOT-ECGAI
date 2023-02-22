@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+Checksum           0x6610D2E0
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                  Checksum
+0x00000000    0x00947A5B    May 31 21:24:53 2021    E:/project/vivado/e203/EAI/project_1/project_1.runs/impl_1/system.bit    0x01F6B484
+File Checksum Total                                                                                                          0x01F6B484

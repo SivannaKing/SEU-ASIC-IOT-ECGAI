@@ -1,0 +1,619 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Dec 22 14:49:07 2021
+# Process ID: 18188
+# Current directory: D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1
+# Command line: vivado.exe -log system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system.tcl -notrace
+# Log file: D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system.vdi
+# Journal file: D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace
+Command: link_design -top system -part xc7a200tfbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+WARNING: [Runs 36-114] Unrecognized file type 'RESOURSES' for 'reset_sys.resources' found in the checkpoint xml
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm.dcp' for cell 'ip_mmcm'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/reset_sys/reset_sys.dcp' for cell 'ip_reset_sys'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_01'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_02'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_03'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_04'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_05'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_06'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_07'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_00/weight_mem_gen_00.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_10/weight_mem_gen_10.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_20/weight_mem_gen_20.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory3'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_30/weight_mem_gen_30.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory4'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_40/weight_mem_gen_40.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory5'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_50/weight_mem_gen_50.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory6'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_60/weight_mem_gen_60.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory7'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/weight_mem_gen_70/weight_mem_gen_70.dcp' for cell 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_weight_buffer/weight_memory8'
+INFO: [Netlist 29-17] Analyzing 28568 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm_board.xdc] for cell 'ip_mmcm/inst'
+Finished Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm_board.xdc] for cell 'ip_mmcm/inst'
+Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm.xdc] for cell 'ip_mmcm/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1929.211 ; gain = 762.566
+Finished Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/mmcm/mmcm.xdc] for cell 'ip_mmcm/inst'
+Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/reset_sys/reset_sys_board.xdc] for cell 'ip_reset_sys/U0'
+Finished Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/reset_sys/reset_sys_board.xdc] for cell 'ip_reset_sys/U0'
+Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/reset_sys/reset_sys.xdc] for cell 'ip_reset_sys/U0'
+Finished Parsing XDC File [d:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.srcs/sources_1/ip/reset_sys/reset_sys.xdc] for cell 'ip_reset_sys/U0'
+Parsing XDC File [D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/constrs/nuclei-master.xdc]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: dut_io_pads_jtag_TCK_i_ival). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/constrs/nuclei-master.xdc:15]
+Finished Parsing XDC File [D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/constrs/nuclei-master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 77 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 73 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1929.965 ; gain = 1592.094
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port pmu_paden expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port pmu_padrst expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1f60104f2
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1ed4a9f95
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 80 cells and removed 1996 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 208904ebb
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 65 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-129] Inserted BUFG to drive high-fanout reset|set|enable net. BUFG cell: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/axi_lite_v1_0_S00_AXI_inst/byte_cnt_reg[1]_0_BUFG_inst, Net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/axi_lite_v1_0_S00_AXI_inst/byte_cnt_reg[1]_0
+Phase 4 BUFG optimization | Checksum: 1d603bdea
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 1 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1d603bdea
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1d603bdea
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1929.965 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.480 . Memory (MB): peak = 1929.965 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1d603bdea
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1929.965 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=18.803 | TNS=0.000 |
+INFO: [Power 33-23] Power model is not available for pullup_TCK
+INFO: [Power 33-23] Power model is not available for pullup_TDI
+INFO: [Power 33-23] Power model is not available for pullup_TMS
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[0]
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[1]
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[2]
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[3]
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 72 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 43 newly gated: 0 Total Ports: 144
+Number of Flops added for Enable Generation: 4
+
+Ending PowerOpt Patch Enables Task | Checksum: 18282680e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.696 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 18282680e
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:12 . Memory (MB): peak = 3180.648 ; gain = 1250.684
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Remap
+Phase 1 Remap | Checksum: 14642c30b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Opt 31-389] Phase Remap created 2 cells and removed 4 cells
+
+Phase 2 Post Processing Netlist
+Phase 2 Post Processing Netlist | Checksum: 17a7a43a2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Ending Logic Optimization Task | Checksum: 17a7a43a2
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+61 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:55 ; elapsed = 00:01:55 . Memory (MB): peak = 3180.648 ; gain = 1250.684
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_drc_opted.rpt -pb system_drc_opted.pb -rpx system_drc_opted.rpx
+Command: report_drc -file system_drc_opted.rpt -pb system_drc_opted.pb -rpx system_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_biu/u_biu_icb_arbt/arbt_num_gt_1_gen.dp_1.u_sirv_gnrl_rspid_fifo/dp_gt_0.vld_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_biu/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_cmd_fifo/dp_gt0.vec_31_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_biu/u_sirv_gnrl_icb_buffer/u_sirv_gnrl_rsp_fifo/dp_gt0.vec_31_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_lsuagu/icb_leftover_err_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_lsuagu/icb_state_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_lsuagu/icb_state_dfflr/qout_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_lsuagu/icb_state_dfflr/qout_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_lsuagu/unalgn_flg_dffl/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/exec_cnt_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/exec_cnt_dfflr/qout_r_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/exec_cnt_dfflr/qout_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/exec_cnt_dfflr/qout_r_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/exec_cnt_dfflr/qout_r_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/exec_cnt_dfflr/qout_r_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/muldiv_state_dfflr/qout_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/part_prdt_sft1_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_alu/u_e203_exu_alu_muldiv/part_remd_sft1_dfflr/qout_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_csr/mie_dfflr/qout_r_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_csr/mie_dfflr/qout_r_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0 has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0/ADDRARDADDR[14] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/qout_r_reg[52][13]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_csr/mie_dfflr/qout_r_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[5]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[11] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[6]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[12] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[7]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[5] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[0]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[6] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[1]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[7] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[2]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[8] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[3]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRARDADDR[9] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addrb[4]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/rd_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/N_cnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/ft_N_cnt_reg[0]_rep__11) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/ft_N_cnt_reg[1]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/ft_N_cnt_reg[3]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ADDRBWRADDR[13] (net: dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_inout_buffer/map_00/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/u_perips_expl_axi_slv/ecg/u_ECG_Top/u_configurator/cfg_Mem_Ctrl/ft_ecg_cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port pmu_paden expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port pmu_padrst expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 44 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: bfd76cad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	IOBUF_jtag_TCK/IBUF (IBUF.O) is locked to IOB_X0Y106
+	dut_io_pads_jtag_TCK_i_ival_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e3ef1b5c
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 188c8eeb7
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:49 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 188c8eeb7
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:50 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 188c8eeb7
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:50 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1c897d18b
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:02:41 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c897d18b
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:41 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 109059fcd
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:03:04 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 107d32320
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:06 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 10c351580
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:06 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1f95931f3
+
+Time (s): cpu = 00:05:36 ; elapsed = 00:03:57 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 186b90deb
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:04:06 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 186b90deb
+
+Time (s): cpu = 00:05:45 ; elapsed = 00:04:07 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 186b90deb
+
+Time (s): cpu = 00:05:46 ; elapsed = 00:04:08 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: f1110a02
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: f1110a02
+
+Time (s): cpu = 00:06:25 ; elapsed = 00:04:34 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=22.062. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 12b8ad2a0
+
+Time (s): cpu = 00:06:26 ; elapsed = 00:04:35 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 12b8ad2a0
+
+Time (s): cpu = 00:06:27 ; elapsed = 00:04:36 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 12b8ad2a0
+
+Time (s): cpu = 00:06:29 ; elapsed = 00:04:38 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 12b8ad2a0
+
+Time (s): cpu = 00:06:30 ; elapsed = 00:04:39 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 14a8509ad
+
+Time (s): cpu = 00:06:30 ; elapsed = 00:04:39 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 14a8509ad
+
+Time (s): cpu = 00:06:31 ; elapsed = 00:04:40 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Ending Placer Task | Checksum: efd9c2dd
+
+Time (s): cpu = 00:06:31 ; elapsed = 00:04:40 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+82 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:06:39 ; elapsed = 00:04:47 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:30 ; elapsed = 00:00:11 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file system_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_placed.rpt -pb system_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3180.648 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.374 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	IOBUF_jtag_TCK/IBUF (IBUF.O) is locked to IOB_X0Y106
+	dut_io_pads_jtag_TCK_i_ival_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y3
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 7cda4ac1 ConstDB: 0 ShapeSum: 72ff781c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 173d3ed16
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:46 . Memory (MB): peak = 3180.648 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 9c5775cf NumContArr: d77c7747 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 173d3ed16
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:49 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 173d3ed16
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:50 . Memory (MB): peak = 3180.648 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 173d3ed16
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:50 . Memory (MB): peak = 3180.648 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2341b6fa2
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:23 . Memory (MB): peak = 3186.230 ; gain = 5.582
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=21.971 | TNS=0.000  | WHS=-2.847 | THS=-335.164|
+
+Phase 2 Router Initialization | Checksum: 16b1a2b13
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:36 . Memory (MB): peak = 3341.246 ; gain = 160.598
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 22b1a41ee
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:02:02 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 36852
+ Number of Nodes with overlaps = 1670
+ Number of Nodes with overlaps = 108
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=15.064 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1b0ed6553
+
+Time (s): cpu = 00:05:29 ; elapsed = 00:03:17 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=15.064 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: b568a877
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:29 . Memory (MB): peak = 3373.352 ; gain = 192.703
+Phase 4 Rip-up And Reroute | Checksum: b568a877
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:03:30 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: b568a877
+
+Time (s): cpu = 00:05:51 ; elapsed = 00:03:34 . Memory (MB): peak = 3373.352 ; gain = 192.703
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=15.064 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: b568a877
+
+Time (s): cpu = 00:05:52 ; elapsed = 00:03:34 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: b568a877
+
+Time (s): cpu = 00:05:52 ; elapsed = 00:03:35 . Memory (MB): peak = 3373.352 ; gain = 192.703
+Phase 5 Delay and Skew Optimization | Checksum: b568a877
+
+Time (s): cpu = 00:05:52 ; elapsed = 00:03:35 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 14750727d
+
+Time (s): cpu = 00:06:01 ; elapsed = 00:03:41 . Memory (MB): peak = 3373.352 ; gain = 192.703
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=15.064 | TNS=0.000  | WHS=-1.887 | THS=-57.199|
+
+Phase 6.1 Hold Fix Iter | Checksum: f56e88a8
+
+Time (s): cpu = 00:06:03 ; elapsed = 00:03:42 . Memory (MB): peak = 3373.352 ; gain = 192.703
+Phase 6 Post Hold Fix | Checksum: e983d7f1
+
+Time (s): cpu = 00:06:03 ; elapsed = 00:03:42 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 20.796 %
+  Global Horizontal Routing Utilization  = 24.8949 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1098c3e8a
+
+Time (s): cpu = 00:06:05 ; elapsed = 00:03:43 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1098c3e8a
+
+Time (s): cpu = 00:06:05 ; elapsed = 00:03:44 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 10db96e6e
+
+Time (s): cpu = 00:06:18 ; elapsed = 00:03:59 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: e9815852
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:04:05 . Memory (MB): peak = 3373.352 ; gain = 192.703
+INFO: [Route 35-57] Estimated Timing Summary | WNS=8.560  | TNS=0.000  | WHS=-0.172 | THS=-0.172 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: e9815852
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:04:05 . Memory (MB): peak = 3373.352 ; gain = 192.703
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:06:28 ; elapsed = 00:04:05 . Memory (MB): peak = 3373.352 ; gain = 192.703
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+100 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:06:40 ; elapsed = 00:04:12 . Memory (MB): peak = 3373.352 ; gain = 192.703
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:37 ; elapsed = 00:00:15 . Memory (MB): peak = 3373.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:44 ; elapsed = 00:00:24 . Memory (MB): peak = 3373.352 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_drc_routed.rpt -pb system_drc_routed.pb -rpx system_drc_routed.rpx
+Command: report_drc -file system_drc_routed.rpt -pb system_drc_routed.pb -rpx system_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 3373.352 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file system_methodology_drc_routed.rpt -pb system_methodology_drc_routed.pb -rpx system_methodology_drc_routed.rpx
+Command: report_methodology -file system_methodology_drc_routed.rpt -pb system_methodology_drc_routed.pb -rpx system_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:04 ; elapsed = 00:00:38 . Memory (MB): peak = 3609.859 ; gain = 236.508
+INFO: [runtcl-4] Executing : report_power -file system_power_routed.rpt -pb system_power_summary_routed.pb -rpx system_power_routed.rpx
+Command: report_power -file system_power_routed.rpt -pb system_power_summary_routed.pb -rpx system_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for pullup_TCK
+INFO: [Power 33-23] Power model is not available for pullup_TDI
+INFO: [Power 33-23] Power model is not available for pullup_TMS
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[0]
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[1]
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[2]
+INFO: [Power 33-23] Power model is not available for qspi0_pullup[3]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+119 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:05 ; elapsed = 00:00:39 . Memory (MB): peak = 3770.793 ; gain = 160.934
+INFO: [runtcl-4] Executing : report_route_status -file system_route_status.rpt -pb system_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_timing_summary_routed.rpt -pb system_timing_summary_routed.pb -rpx system_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3821.090 ; gain = 47.352
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3823.230 ; gain = 2.141
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 22 15:03:58 2021...

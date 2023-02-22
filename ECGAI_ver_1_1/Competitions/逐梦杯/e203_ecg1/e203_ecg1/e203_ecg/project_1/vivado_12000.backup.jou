@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 27 19:22:11 2021
+# Process ID: 12000
+# Current directory: E:/project/vivado/e203_ecg/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11368 E:\project\vivado\e203_ecg\project_1\project_1.xpr
+# Log file: E:/project/vivado/e203_ecg/project_1/vivado.log
+# Journal file: E:/project/vivado/e203_ecg/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/vivado/e203_ecg/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_top.tcl
+add_files {{E:/project/vivado/e203_ecg/design source/ECG_Axi_Lite_Top.v} {E:/project/vivado/e203_ecg/design source/ECG_Top.v} {E:/project/vivado/e203_ecg/design source/SPU_ECG.v} {E:/project/vivado/e203_ecg/design source/Pooling8.v} {E:/project/vivado/e203_ecg/design source/multl.v} {E:/project/vivado/e203_ecg/design source/Mem_Ctrl.v} {E:/project/vivado/e203_ecg/design source/Input_Regfile.v} {E:/project/vivado/e203_ecg/design source/Configurator.v} {E:/project/vivado/e203_ecg/design source/u_PE.v} {E:/project/vivado/e203_ecg/design source/Output_regfile8_9.v} {E:/project/vivado/e203_ecg/design source/RCA_8bit.v} {E:/project/vivado/e203_ecg/design source/Pooling.v} {E:/project/vivado/e203_ecg/design source/Weight_buffer.v} {E:/project/vivado/e203_ecg/design source/axi_lite_S00_AXI.v} {E:/project/vivado/e203_ecg/design source/Pool2IOB.v} {E:/project/vivado/e203_ecg/design source/Relu8.v} {E:/project/vivado/e203_ecg/design source/Output_regfile.v} {E:/project/vivado/e203_ecg/design source/PEarray16_8.v} {E:/project/vivado/e203_ecg/design source/In_Out_Buffer.v} {E:/project/vivado/e203_ecg/design source/Relu.v}}
+update_compile_order -fileset sources_1
+add_bp {E:/project/vivado/e203_ecg/e203/perips/sirv_expl_axi_slv.v} 79
+remove_bps -file {E:/project/vivado/e203_ecg/e203/perips/sirv_expl_axi_slv.v} -line 79
+add_bp {E:/project/vivado/e203_ecg/e203/perips/sirv_expl_axi_slv.v} 79
+remove_bps -file {E:/project/vivado/e203_ecg/e203/perips/sirv_expl_axi_slv.v} -line 79
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim

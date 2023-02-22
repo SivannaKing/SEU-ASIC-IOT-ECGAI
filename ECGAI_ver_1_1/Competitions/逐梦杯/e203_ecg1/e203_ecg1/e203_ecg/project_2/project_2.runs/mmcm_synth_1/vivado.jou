@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov 30 15:12:04 2021
+# Process ID: 41956
+# Current directory: E:/project/vivado/e203_ecg1/e203_ecg/project_2/project_2.runs/mmcm_synth_1
+# Command line: vivado.exe -log mmcm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmcm.tcl
+# Log file: E:/project/vivado/e203_ecg1/e203_ecg/project_2/project_2.runs/mmcm_synth_1/mmcm.vds
+# Journal file: E:/project/vivado/e203_ecg1/e203_ecg/project_2/project_2.runs/mmcm_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mmcm.tcl -notrace

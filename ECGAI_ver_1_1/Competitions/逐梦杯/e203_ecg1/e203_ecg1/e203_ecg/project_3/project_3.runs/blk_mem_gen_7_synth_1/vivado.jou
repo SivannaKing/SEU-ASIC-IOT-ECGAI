@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Nov 29 14:41:53 2021
+# Process ID: 40248
+# Current directory: D:/FPGA/e203_ecg/e203_ecg/project_2/project_2.runs/blk_mem_gen_7_synth_1
+# Command line: vivado.exe -log blk_mem_gen_7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_7.tcl
+# Log file: D:/FPGA/e203_ecg/e203_ecg/project_2/project_2.runs/blk_mem_gen_7_synth_1/blk_mem_gen_7.vds
+# Journal file: D:/FPGA/e203_ecg/e203_ecg/project_2/project_2.runs/blk_mem_gen_7_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_7.tcl -notrace

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 16 16:39:35 2022
+# Process ID: 11800
+# Current directory: E:/LocalProject/ÖðÃÎ±­/e203_ecg1/e203_ecg1/e203_ecg/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14392 E:\LocalProject\ÖðÃÎ±­\e203_ecg1\e203_ecg1\e203_ecg\project_2\project_2.xpr
+# Log file: E:/LocalProject/ÖðÃÎ±­/e203_ecg1/e203_ecg1/e203_ecg/project_2/vivado.log
+# Journal file: E:/LocalProject/ÖðÃÎ±­/e203_ecg1/e203_ecg1/e203_ecg/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only E:/LocalProject/ÖðÃÎ±­/e203_ecg1/e203_ecg1/e203_ecg/project_2/project_2.xpr
+update_compile_order -fileset sources_1

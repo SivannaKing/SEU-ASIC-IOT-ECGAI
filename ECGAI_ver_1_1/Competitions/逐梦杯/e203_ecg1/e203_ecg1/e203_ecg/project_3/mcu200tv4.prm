@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00947A5B    Dec  7 13:48:15 2021    D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3/project_3.runs/impl_1/system.bit

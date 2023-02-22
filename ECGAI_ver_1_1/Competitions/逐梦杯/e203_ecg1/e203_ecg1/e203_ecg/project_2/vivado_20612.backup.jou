@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Dec  4 11:20:38 2021
+# Process ID: 20612
+# Current directory: D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22108 D:\FPGA\e203_ecgV0.2\e203_ecg1\e203_ecg\project_2\project_2.xpr
+# Log file: D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_2/vivado.log
+# Journal file: D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+save_project_as project_3 D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_3 -force
+upgrade_ip -srcset mmcm -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  mmcm] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips mmcm] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation
+open_wave_config D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run all
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_wave_config {D:/FPGA/e203_ecgV0.2/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg}
+close_sim

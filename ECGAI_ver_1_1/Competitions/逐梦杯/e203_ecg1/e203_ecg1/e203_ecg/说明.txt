@@ -1,0 +1,31 @@
+电机硬件加速设计-协处理器
+
+设计平台vivado
+
+关键文件说明
+
+acc                            硬件加速代码
+acc/nice_core           ***协处理器-硬件加速器代码***
+acc/acc_slve.v           硬件加速icb接口模块
+acc/acc_top.v            硬件加速器顶层模块
+acc/atan.v                 反正切计算模块
+acc/div.v                   除法计算模块
+acc/sincos.v              正余弦计算模块
+acc/sincoschange.v  象限转化模块
+acc/sive_opt_top.v    加速器外设挂载模块
+
+
+constrs                     约束文件
+e203                         e203开源代码
+
+
+project_1                                                                              vivado工程
+project_1 /project_1.srcs/sources_1/ ip                               ip核
+project_1 /project_1.srcs/sources_1/hbird2_acc.verilog     测试仿真文件
+
+
+system.mcs            mcs文件（烧写）
+tb_top.v                 仿真代码
+
+
+

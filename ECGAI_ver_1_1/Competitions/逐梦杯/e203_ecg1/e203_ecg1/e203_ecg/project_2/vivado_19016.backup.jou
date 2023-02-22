@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec  2 13:37:26 2021
+# Process ID: 19016
+# Current directory: E:/project/vivado/e203_ecg1/e203_ecg/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5480 E:\project\vivado\e203_ecg1\e203_ecg\project_2\project_2.xpr
+# Log file: E:/project/vivado/e203_ecg1/e203_ecg/project_2/vivado.log
+# Journal file: E:/project/vivado/e203_ecg1/e203_ecg/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/vivado/e203_ecg1/e203_ecg/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 2000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 2000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 2000 us
+run all
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 2000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 2000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 150 us
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 150 us
+run 150 us
+run 1500 us
+restart
+run 100 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 115 us
+restart
+run 113 us
+run 0.8 us
+run 0.8 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 115 us
+run 115 us
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 120 us
+restart
+run 120 us
+save_wave_config {E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 120 us
+run 120 us
+run 120 us
+restart
+run 500 us
+restart
+run 120 us
+restart
+run 120 us
+save_wave_config {E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 120 us
+run 120 us
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config E:/project/vivado/e203_ecg1/e203_ecg/project_1/tb_top_behav.wcfg
+source tb_top.tcl
+run 1000 us
+close_sim
