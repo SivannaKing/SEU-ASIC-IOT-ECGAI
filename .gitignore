@@ -7,7 +7,9 @@
 .*.swp
 *.onnx
 **/.condarc
-5 classes QRS signals 128x128/
+5 classes QRS signals 128x128 1 wave width/
+5 classes QRS signals 128x128 2 wave width/
+5 classes QRS signals 128x128 3 wave width
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

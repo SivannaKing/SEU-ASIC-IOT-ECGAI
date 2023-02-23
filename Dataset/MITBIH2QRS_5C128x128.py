@@ -5,6 +5,9 @@
 @EMAIL      wuzhong_xing@126.com
 @TIME&LOG   2022/09/15 - create - wzx
             Initial Commit
+            2023/02/22 - FEAT   - wzx
+            1. Add 2D-QRS width
+            2. Store 2D-QRS separately
 @FUNC       Transform origin ECG dataset to 5 classes QRS 2D 128*128
 '''
 import os
@@ -31,7 +34,7 @@ def quantize(r: np.array, qmax: int, qmin: int = 0) -> np.array:
     return q.astype(int)
 
 
-def signal2img(signal: list[int], height: int):
+def signal2img(signal: list[int], height: int, wave_width: int):
     """get ECG grey img
 
     Args:
@@ -46,16 +49,19 @@ def signal2img(signal: list[int], height: int):
         print("NOT SQUARE!")
     else:
         for idx, value in enumerate(signal):
-            img[height-value-1, idx] = 1  # flip up and down
+            wave_width_start_idx = max(height - value - 1 - wave_width, 0)
+            img[wave_width_start_idx:height - value - 1,
+                idx] = 1  # flip up and down
     return img
 
 
-def MITBIH_classify(base_path: str, QRS_len: int):
+def MITBIH_classify(base_path: str, QRS_len: int, QRS_wave_width: int):
     """19 kinds of signals are divided into 5 categories based on AAMI standard, and the size is 128*128 2D ECG.
 
     Args:
         base_path (str): Original MIT-BIH dataset path
         QRS_len (int): img size
+        QRS_wave_width:
     """
     # 19->5 classes
     AAMI_MIT = {'N': 'Nfe/jnBLR', 'S': 'SAJa', 'V': 'VEr', 'F': 'F', 'Q': 'Q?'}
@@ -124,7 +130,9 @@ def MITBIH_classify(base_path: str, QRS_len: int):
                     start = site - QRS_len // 2
                     end = site + QRS_len // 2
                     ECG_signal = ECG_signal[start:end]  # cut off QRS
-                    ECG_img = signal2img(ECG_signal, height=QRS_len)
+                    ECG_img = signal2img(ECG_signal,
+                                         height=QRS_len,
+                                         wave_width=QRS_wave_width)
                     ECG[str(k)].append(ECG_img)
 
     for key, value in ECG.items():
@@ -136,16 +144,23 @@ def MITBIH_classify(base_path: str, QRS_len: int):
                 AAMI[AAMI_MIT_key].extend(ECG_value)
 
     # save into csv
-    img_base_path = f'./5 classes QRS signals {QRS_len}x{QRS_len}'
+    img_base_path = f'./5 classes QRS signals {QRS_len}x{QRS_len} {QRS_wave_width} wave width'
     if os.path.exists(img_base_path):
         print('folder exist!')
     else:
         os.mkdir(img_base_path)
     for key, value in AAMI.items():
-        np.save(img_base_path + f'/{key}.npy', np.array(value))
+        img_class_path = img_base_path + f'/{key}'
+        if os.path.exists(img_class_path):
+            print('folder exist!')
+        else:
+            os.mkdir(img_class_path)
+        for idx, qrs in enumerate(value):
+            # e.g. /5 classes QRS signals 128x128 2 wave width/N/Nqrs(1)
+            np.save(img_class_path + f'/{key}qrs({idx}).npy', np.array(qrs))
 
 
-def QRS_print_plot(QRS_len: int):
+def QRS_print_plot(QRS_len: int, QRS_wave_width: int):
     """plot a QRS img
 
     Args:
@@ -155,14 +170,20 @@ def QRS_print_plot(QRS_len: int):
     AAMI = dict()
 
     for key in AAMI_key:
-        AAMI[key] = np.load(f'./5 classes QRS signals {QRS_len}x{QRS_len}/{key}.npy')
+        AAMI[key] = np.load(
+            f'./5 classes QRS signals {QRS_len}x{QRS_len} {QRS_wave_width} wave width/{key}/{key}qrs(0).npy'
+        )
         print(key, AAMI[key].shape)
 
-    ECG_img = AAMI['V'][100, :, :]
+    ECG_img = AAMI['N'][:, :]
     plt.imshow(ECG_img, cmap=plt.get_cmap('gray'))
     plt.show()
 
 
 if __name__ == "__main__":
-    # MITBIH_classify('./mit-bih-arrhythmia-database-1.0.0', QRS_len=128)
-    QRS_print_plot(QRS_len=128)
+
+    MITBIH_classify('./mit-bih-arrhythmia-database-1.0.0',
+                    QRS_len=128,
+                    QRS_wave_width=3)
+
+    QRS_print_plot(QRS_len=128, QRS_wave_width=3)
