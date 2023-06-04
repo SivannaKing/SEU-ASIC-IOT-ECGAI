@@ -1,0 +1,5 @@
+python_code.zip包含了BNN的pytorch训练文件，训练出的模型，以及将模型的权重等参数转为txt、coe的脚本，比对verilog输出的txt与pytorch输出的txt是否一致的脚本，量化代码等文件。
+
+verilog_code.zip则包含了所有设计的verilog源码文件，测试台文件、初始化ROM用到的数据，以及约束文件。
+
+根据“功耗图.png”与“50Mhz运行所需时间.png”，以及毕业论文中计算的GOPs数，即可求得吞吐率、能效这两个性能指标。

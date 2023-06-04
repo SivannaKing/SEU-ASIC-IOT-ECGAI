@@ -1,0 +1,1 @@
+from pytorch_quantization import tensor_quant
