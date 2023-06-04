@@ -30,11 +30,13 @@ git clone --branch [branch/tag] git@github.com:SivannaKing/SEU-ASIC-IOT-ECGAI.gi
     - [branch](#branch)
     - [tag](#tag)
   - [Dataset](#dataset)
-  - [ECGAI_ver_1_0](#ecgai_ver_1_0)
-  - [ECGAI_ver_1_1](#ecgai_ver_1_1)
-  - [ECGAI_ver_2_0](#ecgai_ver_2_0)
-  - [ECGAI_ver_2_1](#ecgai_ver_2_1)
-  - [ECGAI_ver_3_0](#ecgai_ver_3_0)
+  - [ECGAI\_ver\_1\_0](#ecgai_ver_1_0)
+  - [ECGAI\_ver\_1\_1](#ecgai_ver_1_1)
+  - [ECGAI\_ver\_2\_0](#ecgai_ver_2_0)
+  - [ECGAI\_ver\_2\_1](#ecgai_ver_2_1)
+  - [ECGAI\_ver\_3\_0](#ecgai_ver_3_0)
+  - [ECGAI\_ver\_3\_1](#ecgai_ver_3_1)
+  - [ECGAI\_ver\_3\_2](#ecgai_ver_3_2)
   - [比赛链接](#比赛链接)
 
 ---
@@ -106,7 +108,19 @@ Contributor : 苏峰；
 ## ECGAI_ver_3_0
 Contributor : 刘子劲；
 
-二值化版本。但是没有完全二值化，有些还是使用了两位(+1, -1, 0)。
+二值化版本。5分类。第一层采用8bit。
+
+---
+## ECGAI_ver_3_1
+Contributor : 苗琦慧；
+
+二值化版本。只包含算法。17分类。第一层未二值化。
+
+---
+## ECGAI_ver_3_2
+Contributor : 蒲宁昊；
+
+二值化版本。每一层都二值化了。加速器架构采用流水线的形式。
 
 ---
 ## 比赛链接
