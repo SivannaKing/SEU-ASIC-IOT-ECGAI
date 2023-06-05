@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="act_mem_0_synth_1" LaunchDir="E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/act_mem_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="act_mem_1_synth_1" LaunchDir="E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/act_mem_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="threshold_mem_synth_1" LaunchDir="E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/threshold_mem_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="weg_mem_synth_1" LaunchDir="E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/weg_mem_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="act_mem_0_synth_1"/>
+		<Parent Id="act_mem_1_synth_1"/>
+		<Parent Id="threshold_mem_synth_1"/>
+		<Parent Id="weg_mem_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

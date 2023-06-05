@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ECGAI_ver_3_0.gen/sources_1/ip/weg_mem/sim/weg_mem.v" \
+"../../../../ECGAI_ver_3_0.gen/sources_1/ip/act_mem_1/sim/act_mem_1.v" \
+"../../../../ECGAI_ver_3_0.gen/sources_1/ip/act_mem_0/sim/act_mem_0.v" \
+"../../../../ECGAI_ver_3_0.gen/sources_1/ip/threshold_mem/sim/threshold_mem.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_a.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_w.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_top.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pooling.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/swu.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/weg.v" \
+"../../../../ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

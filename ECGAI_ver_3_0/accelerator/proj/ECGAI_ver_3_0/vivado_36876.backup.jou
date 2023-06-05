@@ -1,0 +1,213 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  5 13:55:19 2023
+# Process ID: 36876
+# Current directory: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent47036 E:\Repository\SEU-ASIC-IOT-ECGAI\ECGAI_ver_3_0\accelerator\proj\ECGAI_ver_3_0\ECGAI_ver_3_0.xpr
+# Log file: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/vivado.log
+# Journal file: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/new/test.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/new/test2.v] -no_script -reset -force -quiet
+remove_files  {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/new/test.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/new/test2.v}
+remove_files  {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/new/test.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/new/test2.v}
+import_files -norecurse {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/axi_lit_inist.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl_pe.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ecg_bnn_axi_lite_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl_a.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/pe_array.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/sim/test_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/act_unimem.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ecg_bnn_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/pooling.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/pe.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/swu.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl_w.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/weg.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/test_top.v] -no_script -reset -force -quiet
+remove_files  E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/test_top.v
+import_files -norecurse E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/sim/tb_ecg_bnn_top.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+import_files -force -norecurse E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/sim/tb_ecg_bnn_top.v
+delete_fileset [ get_filesets sim_1 ]
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/sim/tb_ecg_bnn_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_a.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/swu.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/weg.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_w.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pooling.v] -no_script -reset -force -quiet
+remove_files  {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/sim/tb_ecg_bnn_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_a.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/swu.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/weg.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_w.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pooling.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_axi_lite_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe.v] -no_script -reset -force -quiet
+remove_files  {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_axi_lite_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/axi_lit_inist.v] -no_script -reset -force -quiet
+remove_files  E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/axi_lit_inist.v
+remove_files  E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/axi_lit_inist.v
+import_files -norecurse {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/sim/tb_ecg_bnn_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/axi_lit_inist.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl_pe.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ecg_bnn_axi_lite_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl_a.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/pe_array.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/act_unimem.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ecg_bnn_top.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/pooling.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/pe.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/swu.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/ctrl_w.v E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/rtl/weg.v}
+update_compile_order -fileset sources_1
+create_bd_design "act_mem_0"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+endgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4} CONFIG.SINGLE_PORT_BRAM {0} CONFIG.ECC_TYPE {0}] [get_bd_cells axi_bram_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property -dict [list CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1} CONFIG.RD_CMD_OPTIMIZATION {0}] [get_bd_cells axi_bram_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 lmb_bram_if_cntlr_0
+endgroup
+delete_bd_objs [get_bd_cells lmb_bram_if_cntlr_0]
+regenerate_bd_layout
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+set_property location {1.5 394 112} [get_bd_cells blk_mem_gen_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Enable_B {Always_Enabled} CONFIG.Use_RSTB_Pin {false} CONFIG.Additional_Inputs_for_Power_Estimation {false} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {0} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_cells axi_bram_ctrl_0]
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name act_mem_0
+set_property -dict [list CONFIG.Component_Name {act_mem_0} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/coefiles/act_mem_0.coe}] [get_ips act_mem_0]
+generate_target {instantiation_template} [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci]
+catch { config_ip_cache -export [get_ips -all act_mem_0] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci]
+launch_runs act_mem_0_synth_1 -jobs 6
+wait_on_run act_mem_0_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+open_bd_design {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd}
+export_ip_user_files -of_objects  [get_files E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd] -no_script -reset -force -quiet
+remove_files  E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/bd/act_mem_0/act_mem_0.bd
+set_property -dict [list CONFIG.Load_Init_File {false} CONFIG.Coe_File {no_coe_file_loaded}] [get_ips act_mem_0]
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci]
+catch { config_ip_cache -export [get_ips -all act_mem_0] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci] -no_script -sync -force -quiet
+reset_run act_mem_0_synth_1
+launch_runs act_mem_0_synth_1 -jobs 6
+wait_on_run act_mem_0_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Register_PortA_Output_of_Memory_Primitives {true}] [get_ips act_mem_0]
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci]
+catch { config_ip_cache -export [get_ips -all act_mem_0] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci] -no_script -sync -force -quiet
+reset_run act_mem_0_synth_1
+launch_runs act_mem_0_synth_1 -jobs 6
+wait_on_run act_mem_0_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_0/act_mem_0.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs blk_mem_gen_0_synth_1 -jobs 6
+wait_on_run blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name act_mem_1
+set_property -dict [list CONFIG.Component_Name {act_mem_1} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips act_mem_1]
+generate_target {instantiation_template} [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_1/act_mem_1.xci]
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_1/act_mem_1.xci]
+catch { config_ip_cache -export [get_ips -all act_mem_1] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_1/act_mem_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_1/act_mem_1.xci]
+launch_runs act_mem_1_synth_1 -jobs 6
+wait_on_run act_mem_1_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/act_mem_1/act_mem_1.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name threshold_mem
+set_property -dict [list CONFIG.Component_Name {threshold_mem} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips threshold_mem]
+generate_target {instantiation_template} [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci]
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci]
+catch { config_ip_cache -export [get_ips -all threshold_mem] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci]
+launch_runs threshold_mem_synth_1 -jobs 6
+wait_on_run threshold_mem_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name weg_mem
+set_property -dict [list CONFIG.Component_Name {weg_mem} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {8192} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/coefiles/weight_mem.coe}] [get_ips weg_mem]
+generate_target {instantiation_template} [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/weg_mem/weg_mem.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/weg_mem/weg_mem.xci]
+catch { config_ip_cache -export [get_ips -all weg_mem] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/weg_mem/weg_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/weg_mem/weg_mem.xci]
+launch_runs weg_mem_synth_1 -jobs 6
+wait_on_run weg_mem_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/weg_mem/weg_mem.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/coefiles/threshold_mem.coe}] [get_ips threshold_mem]
+generate_target all [get_files  e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci]
+catch { config_ip_cache -export [get_ips -all threshold_mem] }
+export_ip_user_files -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci] -no_script -sync -force -quiet
+reset_run threshold_mem_synth_1
+launch_runs threshold_mem_synth_1 -jobs 6
+wait_on_run threshold_mem_synth_1
+export_simulation -of_objects [get_files e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/ip/threshold_mem/threshold_mem.xci] -directory E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/sim_scripts -ip_user_files_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files -ipstatic_source_dir E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/modelsim} {questa=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/questa} {riviera=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/riviera} {activehdl=E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source test_top.tcl
+run 10 us
+run 10 ms
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source test_top.tcl
+run 10 ms
+relaunch_sim
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+close_sim

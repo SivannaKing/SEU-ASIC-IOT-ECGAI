@@ -1,0 +1,2 @@
+weg_mem.v,verilog,xil_defaultlib,../../../../ECGAI_ver_3_0.gen/sources_1/ip/weg_mem/sim/weg_mem.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

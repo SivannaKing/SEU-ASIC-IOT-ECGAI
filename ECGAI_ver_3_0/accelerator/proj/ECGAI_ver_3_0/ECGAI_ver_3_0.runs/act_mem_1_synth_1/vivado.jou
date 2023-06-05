@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  5 19:20:08 2023
+# Process ID: 17688
+# Current directory: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/act_mem_1_synth_1
+# Command line: vivado.exe -log act_mem_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source act_mem_1.tcl
+# Log file: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/act_mem_1_synth_1/act_mem_1.vds
+# Journal file: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/act_mem_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source act_mem_1.tcl -notrace

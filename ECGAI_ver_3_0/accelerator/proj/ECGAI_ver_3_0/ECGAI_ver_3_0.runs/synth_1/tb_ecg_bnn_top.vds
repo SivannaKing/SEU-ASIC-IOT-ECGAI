@@ -1,0 +1,809 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun  5 19:29:42 2023
+# Process ID: 18988
+# Current directory: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1
+# Command line: vivado.exe -log tb_ecg_bnn_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_ecg_bnn_top.tcl
+# Log file: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/tb_ecg_bnn_top.vds
+# Journal file: E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tb_ecg_bnn_top.tcl -notrace
+Command: synth_design -top tb_ecg_bnn_top -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23940
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1204.781 ; gain = 98.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb_ecg_bnn_top' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:23]
+	Parameter clk_period bound to: 5 - type: integer 
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:39]
+INFO: [Synth 8-6157] synthesizing module 'ecg_bnn_top' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_top.v:23]
+	Parameter SWUREGADRWID bound to: 5 - type: integer 
+	Parameter SWUREDEPTH bound to: 20 - type: integer 
+	Parameter TMPWID bound to: 12 - type: integer 
+	Parameter ACTMEMADRWID bound to: 11 - type: integer 
+	Parameter ACTREGADRWID bound to: 5 - type: integer 
+	Parameter WEGREDNUM bound to: 80 - type: integer 
+	Parameter WEGREGADRWID bound to: 7 - type: integer 
+	Parameter WEGMEMADRWID bound to: 13 - type: integer 
+	Parameter KS0 bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pe_array' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v:23]
+	Parameter ACTMEMADRWID bound to: 11 - type: integer 
+	Parameter TMPWID bound to: 12 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter INT_CMP bound to: 3'b001 
+	Parameter BIN_CMP bound to: 3'b010 
+	Parameter DEN_CMP bound to: 3'b011 
+	Parameter AVG_POL bound to: 3'b100 
+	Parameter S0W0IDLE bound to: 3'b000 
+	Parameter S0W0CMP bound to: 3'b001 
+	Parameter S0W1IDLE bound to: 3'b010 
+	Parameter S0W1CMP bound to: 3'b011 
+	Parameter S1W0IDLE bound to: 3'b100 
+	Parameter S1W0CMP bound to: 3'b101 
+	Parameter S1W1IDLE bound to: 3'b110 
+	Parameter S1W1CMP bound to: 3'b111 
+	Parameter LYR0ACTBIAS bound to: 11'b00000000000 
+	Parameter LYR2ACTBIAS bound to: 11'b01110000100 
+	Parameter LYR4ACTBIAS bound to: 11'b10000011010 
+	Parameter LYR6ACTBIAS bound to: 11'b10000011100 
+	Parameter LYR1ACTBIAS bound to: 11'b00000000000 
+	Parameter LYR3ACTBIAS bound to: 11'b00100101100 
+	Parameter LYR5ACTBIAS bound to: 11'b00100110100 
+INFO: [Synth 8-6157] synthesizing module 'pe' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe.v:23]
+	Parameter TMPWID bound to: 12 - type: integer 
+	Parameter MIDWID bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pe' (1#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v:245]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v:262]
+INFO: [Synth 8-6155] done synthesizing module 'pe_array' (2#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pe_array.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_pe' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v:23]
+	Parameter TMPWID bound to: 12 - type: integer 
+	Parameter LYR0OL bound to: 9'b100101100 
+	Parameter LYR1OL bound to: 9'b010010110 
+	Parameter LYR2OL bound to: 9'b001001011 
+	Parameter LYR3OL bound to: 9'b000100101 
+	Parameter LYR4OL bound to: 9'b000010010 
+	Parameter LYR0IC bound to: 8'b00000001 
+	Parameter LYR1IC bound to: 8'b01000000 
+	Parameter LYR2IC bound to: 8'b01000000 
+	Parameter LYR3IC bound to: 8'b10000000 
+	Parameter LYR4IC bound to: 8'b10000000 
+	Parameter LYR0OC bound to: 9'b001000000 
+	Parameter LYR1OC bound to: 9'b001000000 
+	Parameter LYR2OC bound to: 9'b010000000 
+	Parameter LYR3OC bound to: 9'b010000000 
+	Parameter LYR4OC bound to: 9'b100000000 
+	Parameter IDLE bound to: 3'b000 
+	Parameter INT_CMP bound to: 3'b001 
+	Parameter BIN_CMP bound to: 3'b010 
+	Parameter DEN_CMP bound to: 3'b011 
+	Parameter AVG_POL bound to: 3'b100 
+	Parameter DONE bound to: 3'b101 
+	Parameter S0W0IDLE bound to: 3'b000 
+	Parameter S0W0CMP bound to: 3'b001 
+	Parameter S0W1IDLE bound to: 3'b010 
+	Parameter S0W1CMP bound to: 3'b011 
+	Parameter S1W0IDLE bound to: 3'b100 
+	Parameter S1W0CMP bound to: 3'b101 
+	Parameter S1W1IDLE bound to: 3'b110 
+	Parameter S1W1CMP bound to: 3'b111 
+	Parameter LYR0TREBASE bound to: 8'b00000000 
+	Parameter LYR1TREBASE bound to: 8'b00010000 
+	Parameter LYR2TREBASE bound to: 8'b00100000 
+	Parameter LYR3TREBASE bound to: 8'b01000000 
+	Parameter LYR4TREBASE bound to: 8'b01100000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v:395]
+INFO: [Synth 8-226] default block is never used [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v:621]
+INFO: [Synth 8-6157] synthesizing module 'threshold_mem' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/threshold_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'threshold_mem' (3#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/threshold_mem_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v:722]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_pe' (4#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_pe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl.v:23]
+	Parameter WEGMEMADRWID bound to: 13 - type: integer 
+	Parameter ACTMEMADRWID bound to: 11 - type: integer 
+	Parameter TMPWID bound to: 12 - type: integer 
+	Parameter KS0 bound to: 12 - type: integer 
+	Parameter LYR0OL bound to: 9'b100101100 
+	Parameter LYR1OL bound to: 9'b010010110 
+	Parameter LYR2OL bound to: 9'b001001011 
+	Parameter LYR3OL bound to: 9'b000100101 
+	Parameter LYR4OL bound to: 9'b000010010 
+	Parameter LYR0IC bound to: 8'b00000001 
+	Parameter LYR1IC bound to: 8'b01000000 
+	Parameter LYR2IC bound to: 8'b01000000 
+	Parameter LYR3IC bound to: 8'b10000000 
+	Parameter LYR4IC bound to: 8'b10000000 
+	Parameter LYR0OC bound to: 9'b001000000 
+	Parameter LYR1OC bound to: 9'b001000000 
+	Parameter LYR2OC bound to: 9'b010000000 
+	Parameter LYR3OC bound to: 9'b010000000 
+	Parameter LYR4OC bound to: 9'b100000000 
+	Parameter LYR1IL bound to: 8'b10010110 
+	Parameter LYR2IL bound to: 8'b01001011 
+	Parameter LYR3IL bound to: 8'b00100101 
+	Parameter LYR4IL bound to: 8'b00010010 
+	Parameter LYR0WEGBIAS bound to: 13'b0000000000000 
+	Parameter LYR1WEGBIAS bound to: 13'b0000010100000 
+	Parameter LYR2WEGBIAS bound to: 13'b0001000100000 
+	Parameter LYR3WEGBIAS bound to: 13'b0010100100000 
+	Parameter LYR4WEGBIAS bound to: 13'b0101100100000 
+	Parameter LYR5WEGBIAS bound to: 13'b1011100100000 
+	Parameter LYR6WEGBIAS bound to: 13'b1100100100000 
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (5#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_a' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_a.v:23]
+	Parameter ACTMEMADRWID bound to: 11 - type: integer 
+	Parameter ACTREGADRWID bound to: 5 - type: integer 
+	Parameter IDLE0 bound to: 2'b00 
+	Parameter WSWU0 bound to: 2'b01 
+	Parameter IDLE1 bound to: 2'b10 
+	Parameter WSWU1 bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_a' (6#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_a.v:23]
+INFO: [Synth 8-6157] synthesizing module 'swu' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/swu.v:23]
+	Parameter SWUREGADRWID bound to: 5 - type: integer 
+	Parameter SWUREDEPTH bound to: 20 - type: integer 
+	Parameter TMPWID bound to: 12 - type: integer 
+	Parameter IDLEW bound to: 2'b00 
+	Parameter WSWU bound to: 2'b01 
+	Parameter IDLER bound to: 2'b10 
+	Parameter RSWU bound to: 2'b11 
+	Parameter IDLE bound to: 3'b000 
+	Parameter INT_CMP bound to: 3'b001 
+	Parameter BIN_CMP bound to: 3'b010 
+	Parameter DEN_CMP bound to: 3'b011 
+	Parameter AVG_POL bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'swu' (7#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/swu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'act_unimem' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v:23]
+	Parameter ACTMEMADRWID bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'act_mem_0' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/act_mem_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'act_mem_0' (8#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/act_mem_0_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'addra' does not match port width (10) of module 'act_mem_0' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v:75]
+INFO: [Synth 8-6157] synthesizing module 'act_mem_1' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/act_mem_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'act_mem_1' (9#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/act_mem_1_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'addra' does not match port width (10) of module 'act_mem_1' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'act_unimem' (10#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/act_unimem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'weg' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/weg.v:23]
+	Parameter WEGREDNUM bound to: 80 - type: integer 
+	Parameter WEGREGADRWID bound to: 7 - type: integer 
+	Parameter IDLEW bound to: 2'b00 
+	Parameter WWEG bound to: 2'b01 
+	Parameter IDLER bound to: 2'b10 
+	Parameter RWEG bound to: 2'b11 
+	Parameter IDLE bound to: 3'b000 
+	Parameter INT_CMP bound to: 3'b001 
+	Parameter BIN_CMP bound to: 3'b010 
+	Parameter DEN_CMP bound to: 3'b011 
+	Parameter DONE bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'weg' (11#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/weg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_w' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_w.v:23]
+	Parameter WEGMEMADRWID bound to: 13 - type: integer 
+	Parameter WEGREGADRWID bound to: 7 - type: integer 
+	Parameter IDLE0 bound to: 2'b00 
+	Parameter WWEG0 bound to: 2'b01 
+	Parameter IDLE1 bound to: 2'b10 
+	Parameter WWEG1 bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_w' (12#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_w.v:23]
+INFO: [Synth 8-6157] synthesizing module 'weg_mem' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/weg_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'weg_mem' (13#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/.Xil/Vivado-18988-wzxY9000X/realtime/weg_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pooling' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pooling.v:23]
+	Parameter ACTMEMADRWID bound to: 11 - type: integer 
+	Parameter L0OL bound to: 8'b10010110 
+	Parameter L1OL bound to: 8'b01001011 
+	Parameter L2OL bound to: 8'b00100110 
+	Parameter L3OL bound to: 8'b00010011 
+	Parameter L4OL bound to: 8'b00000001 
+	Parameter L5OL bound to: 8'b00000001 
+	Parameter L6OL bound to: 8'b00000001 
+	Parameter L0OC bound to: 9'b000100000 
+	Parameter L1OC bound to: 9'b000100000 
+	Parameter L2OC bound to: 9'b001100000 
+	Parameter L3OC bound to: 9'b001100000 
+	Parameter L4OC bound to: 9'b011100000 
+	Parameter L5OC bound to: 9'b000100000 
+	Parameter L6OC bound to: 9'b000000101 
+	Parameter IDLE bound to: 2'b00 
+	Parameter POL bound to: 2'b01 
+	Parameter WMEM bound to: 2'b10 
+	Parameter PAD bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pooling.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'pooling' (14#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/pooling.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ecg_bnn_top' (15#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ecg_bnn_top.v:23]
+WARNING: [Synth 8-7071] port 'bram_addr_a' of module 'ecg_bnn_top' is unconnected for instance 'u_ecg_bnn_top' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:59]
+WARNING: [Synth 8-7071] port 'bram_wrdata_a' of module 'ecg_bnn_top' is unconnected for instance 'u_ecg_bnn_top' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:59]
+WARNING: [Synth 8-7071] port 'bram_en_a' of module 'ecg_bnn_top' is unconnected for instance 'u_ecg_bnn_top' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:59]
+WARNING: [Synth 8-7071] port 'bram_we_a' of module 'ecg_bnn_top' is unconnected for instance 'u_ecg_bnn_top' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:59]
+WARNING: [Synth 8-7023] instance 'u_ecg_bnn_top' of module 'ecg_bnn_top' has 9 connections declared, but only 5 given [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'tb_ecg_bnn_top' (16#1) [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.039 ; gain = 223.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.039 ; gain = 223.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.039 ; gain = 223.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.366 . Memory (MB): peak = 1330.039 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/act_mem_0/act_mem_0/act_mem_0_in_context.xdc] for cell 'u_ecg_bnn_top/u_act_unimem/u_act_mem0'
+Finished Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/act_mem_0/act_mem_0/act_mem_0_in_context.xdc] for cell 'u_ecg_bnn_top/u_act_unimem/u_act_mem0'
+Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/act_mem_1/act_mem_1/act_mem_1_in_context.xdc] for cell 'u_ecg_bnn_top/u_act_unimem/u_act_mem1'
+Finished Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/act_mem_1/act_mem_1/act_mem_1_in_context.xdc] for cell 'u_ecg_bnn_top/u_act_unimem/u_act_mem1'
+Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/threshold_mem/threshold_mem/threshold_mem_in_context.xdc] for cell 'u_ecg_bnn_top/u_ctrl_pe/u_threshold_mem'
+Finished Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/threshold_mem/threshold_mem/threshold_mem_in_context.xdc] for cell 'u_ecg_bnn_top/u_ctrl_pe/u_threshold_mem'
+Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/weg_mem/weg_mem/weg_mem_in_context.xdc] for cell 'u_ecg_bnn_top/u_weg_mem'
+Finished Parsing XDC File [e:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.gen/sources_1/ip/weg_mem/weg_mem/weg_mem_in_context.xdc] for cell 'u_ecg_bnn_top/u_weg_mem'
+Parsing XDC File [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1451.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1451.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1451.492 ; gain = 344.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1451.492 ; gain = 344.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_ecg_bnn_top/u_act_unimem/u_act_mem0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_ecg_bnn_top/u_act_unimem/u_act_mem1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_ecg_bnn_top/u_ctrl_pe/u_threshold_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_ecg_bnn_top/u_weg_mem. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1451.492 ; gain = 344.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cmp_cs_reg' in module 'ctrl_pe'
+INFO: [Synth 8-802] inferred FSM for state register 'pe_cs_reg' in module 'ctrl_pe'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_a_cs_reg' in module 'ctrl_a'
+INFO: [Synth 8-802] inferred FSM for state register 'swu_cs_reg' in module 'swu'
+INFO: [Synth 8-802] inferred FSM for state register 'weg_cs_reg' in module 'weg'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_w_cs_reg' in module 'ctrl_w'
+INFO: [Synth 8-802] inferred FSM for state register 'polcs_reg' in module 'pooling'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 INT_CMP |                              001 |                              001
+                 BIN_CMP |                              010 |                              010
+                 DEN_CMP |                              011 |                              011
+                    DONE |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pe_cs_reg' using encoding 'sequential' in module 'ctrl_pe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                S0W0IDLE |                              001 |                              000
+                 S0W0CMP |                              111 |                              001
+                S0W1IDLE |                              010 |                              010
+                 S0W1CMP |                              110 |                              011
+                S1W1IDLE |                              100 |                              110
+                 S1W1CMP |                              000 |                              111
+                S1W0IDLE |                              011 |                              100
+                 S1W0CMP |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cmp_cs_reg' using encoding 'sequential' in module 'ctrl_pe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_a_cs_reg' using encoding 'sequential' in module 'ctrl_a'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   IDLEW |                               10 |                               00
+                    WSWU |                               11 |                               01
+                   IDLER |                               01 |                               10
+                    RSWU |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'swu_cs_reg' using encoding 'sequential' in module 'swu'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   IDLEW |                               01 |                               00
+                    WWEG |                               11 |                               01
+                   IDLER |                               10 |                               10
+                    RWEG |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'weg_cs_reg' using encoding 'sequential' in module 'weg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   IDLE0 |                             0010 |                               00
+                   WWEG0 |                             1000 |                               01
+                   IDLE1 |                             0100 |                               10
+                   WWEG1 |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_w_cs_reg' using encoding 'one-hot' in module 'ctrl_w'
+WARNING: [Synth 8-327] inferring latch for variable 'wegmemaddr_reg' [E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.srcs/sources_1/imports/accelerator/rtl/ctrl_w.v:148]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     PAD |                               00 |                               11
+                    IDLE |                               01 |                               00
+                     POL |                               10 |                               01
+                    WMEM |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'polcs_reg' using encoding 'sequential' in module 'pooling'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1451.492 ; gain = 344.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 4     
+	   4 Input   11 Bit       Adders := 32    
+	   2 Input   11 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 15    
+	   2 Input    8 Bit       Adders := 132   
+	   2 Input    7 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 36    
+	   6 Input    3 Bit       Adders := 32    
+	   2 Input    3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      6 Bit         XORs := 32    
++---Registers : 
+	              384 Bit    Registers := 1     
+	              192 Bit    Registers := 2     
+	               32 Bit    Registers := 211   
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 32    
+	               11 Bit    Registers := 450   
+	                9 Bit    Registers := 19    
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 9     
+	                6 Bit    Registers := 34    
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 69    
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 470   
++---Muxes : 
+	   2 Input  192 Bit        Muxes := 5     
+	   3 Input  192 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 4     
+	   7 Input   13 Bit        Muxes := 1     
+	   8 Input   13 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 105   
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 24    
+	   5 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   7 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 134   
+	   5 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 4     
+	   7 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 10    
+	   5 Input    7 Bit        Muxes := 2     
+	   4 Input    7 Bit        Muxes := 2     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   2 Input    5 Bit        Muxes := 10    
+	   4 Input    5 Bit        Muxes := 4     
+	   5 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 43    
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 30    
+	   5 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 8     
+	   8 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 30    
+	   4 Input    2 Bit        Muxes := 14    
+	   5 Input    2 Bit        Muxes := 4     
+	  11 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 419   
+	   3 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[24].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[24].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[24].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[25].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[25].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[25].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[27].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[27].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[27].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[28].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[28].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[28].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[29].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[29].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[29].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[30].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[30].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[30].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[31].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[31].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[31].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[4].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[4].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[4].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[2].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[2].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[2].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[1].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[1].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[1].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[0].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[0].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[0].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[36]' (FDCE) to 'peoutreg_reg[96]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[37]' (FDCE) to 'peoutreg_reg[97]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[38]' (FDCE) to 'peoutreg_reg[98]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[39]' (FDCE) to 'peoutreg_reg[99]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[40]' (FDCE) to 'peoutreg_reg[100]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[41]' (FDCE) to 'peoutreg_reg[101]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[42]' (FDCE) to 'peoutreg_reg[102]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[43]' (FDCE) to 'peoutreg_reg[103]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[44]' (FDCE) to 'peoutreg_reg[104]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[45]' (FDCE) to 'peoutreg_reg[105]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[46]' (FDCE) to 'peoutreg_reg[106]'
+INFO: [Synth 8-3886] merging instance 'peoutreg_reg[47]' (FDCE) to 'peoutreg_reg[107]'
+INFO: [Synth 8-3886] merging instance 'pe_loop[4].u_pe_i/classout_reg_reg[10]' (FDCE) to 'pe_loop[4].u_pe_i/classout_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pe_loop[2].u_pe_i/classout_reg_reg[10]' (FDCE) to 'pe_loop[2].u_pe_i/classout_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pe_loop[1].u_pe_i/classout_reg_reg[10]' (FDCE) to 'pe_loop[1].u_pe_i/classout_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pe_loop[0].u_pe_i/classout_reg_reg[10]' (FDCE) to 'pe_loop[0].u_pe_i/classout_reg_reg[11]'
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[11].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[12].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[13].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[14].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[15].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[26].u_pe_i /\binmulti_reg[0] )
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+DSP Report: Generating DSP thre_new0, operation Mode is: (0 or C)+(A*(B:0x12) or 0).
+DSP Report: operator thre_new0 is absorbed into DSP thre_new0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[3].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[3].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[3].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[5].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[5].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[5].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[5].threshold_array_reg[5][7]' (FDCE) to 'threshold_loop[5].threshold_array_reg[5][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[5].threshold_array_reg[5][8]' (FDCE) to 'threshold_loop[5].threshold_array_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[5].threshold_array_reg[5][9]' (FDCE) to 'threshold_loop[5].threshold_array_reg[5][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[6].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[6].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[6].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[6].threshold_array_reg[6][7]' (FDCE) to 'threshold_loop[6].threshold_array_reg[6][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[6].threshold_array_reg[6][8]' (FDCE) to 'threshold_loop[6].threshold_array_reg[6][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[6].threshold_array_reg[6][9]' (FDCE) to 'threshold_loop[6].threshold_array_reg[6][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[7].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[7].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[7].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[7].threshold_array_reg[7][7]' (FDCE) to 'threshold_loop[7].threshold_array_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[7].threshold_array_reg[7][8]' (FDCE) to 'threshold_loop[7].threshold_array_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[7].threshold_array_reg[7][9]' (FDCE) to 'threshold_loop[7].threshold_array_reg[7][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[8].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[8].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[8].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[8].threshold_array_reg[8][7]' (FDCE) to 'threshold_loop[8].threshold_array_reg[8][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[8].threshold_array_reg[8][8]' (FDCE) to 'threshold_loop[8].threshold_array_reg[8][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[8].threshold_array_reg[8][9]' (FDCE) to 'threshold_loop[8].threshold_array_reg[8][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[9].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[9].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[9].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[9].threshold_array_reg[9][7]' (FDCE) to 'threshold_loop[9].threshold_array_reg[9][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[9].threshold_array_reg[9][8]' (FDCE) to 'threshold_loop[9].threshold_array_reg[9][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[9].threshold_array_reg[9][9]' (FDCE) to 'threshold_loop[9].threshold_array_reg[9][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pe_loop[10].u_pe_i /\binmulti_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pe_loop[10].u_pe_i/intmultisum_reg[9]' (FDCE) to 'pe_loop[10].u_pe_i/intmultisum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[10].threshold_array_reg[10][7]' (FDCE) to 'threshold_loop[10].threshold_array_reg[10][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[10].threshold_array_reg[10][8]' (FDCE) to 'threshold_loop[10].threshold_array_reg[10][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[10].threshold_array_reg[10][9]' (FDCE) to 'threshold_loop[10].threshold_array_reg[10][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[31].threshold_array_reg[31][7]' (FDCE) to 'threshold_loop[31].threshold_array_reg[31][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[31].threshold_array_reg[31][8]' (FDCE) to 'threshold_loop[31].threshold_array_reg[31][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[31].threshold_array_reg[31][9]' (FDCE) to 'threshold_loop[31].threshold_array_reg[31][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[30].threshold_array_reg[30][7]' (FDCE) to 'threshold_loop[30].threshold_array_reg[30][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[30].threshold_array_reg[30][8]' (FDCE) to 'threshold_loop[30].threshold_array_reg[30][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[30].threshold_array_reg[30][9]' (FDCE) to 'threshold_loop[30].threshold_array_reg[30][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[29].threshold_array_reg[29][7]' (FDCE) to 'threshold_loop[29].threshold_array_reg[29][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[29].threshold_array_reg[29][8]' (FDCE) to 'threshold_loop[29].threshold_array_reg[29][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[29].threshold_array_reg[29][9]' (FDCE) to 'threshold_loop[29].threshold_array_reg[29][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[28].threshold_array_reg[28][7]' (FDCE) to 'threshold_loop[28].threshold_array_reg[28][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[28].threshold_array_reg[28][8]' (FDCE) to 'threshold_loop[28].threshold_array_reg[28][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[28].threshold_array_reg[28][9]' (FDCE) to 'threshold_loop[28].threshold_array_reg[28][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[27].threshold_array_reg[27][7]' (FDCE) to 'threshold_loop[27].threshold_array_reg[27][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[27].threshold_array_reg[27][8]' (FDCE) to 'threshold_loop[27].threshold_array_reg[27][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[27].threshold_array_reg[27][9]' (FDCE) to 'threshold_loop[27].threshold_array_reg[27][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[26].threshold_array_reg[26][7]' (FDCE) to 'threshold_loop[26].threshold_array_reg[26][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[26].threshold_array_reg[26][8]' (FDCE) to 'threshold_loop[26].threshold_array_reg[26][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[26].threshold_array_reg[26][9]' (FDCE) to 'threshold_loop[26].threshold_array_reg[26][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[25].threshold_array_reg[25][7]' (FDCE) to 'threshold_loop[25].threshold_array_reg[25][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[25].threshold_array_reg[25][8]' (FDCE) to 'threshold_loop[25].threshold_array_reg[25][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[25].threshold_array_reg[25][9]' (FDCE) to 'threshold_loop[25].threshold_array_reg[25][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[24].threshold_array_reg[24][7]' (FDCE) to 'threshold_loop[24].threshold_array_reg[24][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[24].threshold_array_reg[24][8]' (FDCE) to 'threshold_loop[24].threshold_array_reg[24][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[24].threshold_array_reg[24][9]' (FDCE) to 'threshold_loop[24].threshold_array_reg[24][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[23].threshold_array_reg[23][7]' (FDCE) to 'threshold_loop[23].threshold_array_reg[23][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[23].threshold_array_reg[23][8]' (FDCE) to 'threshold_loop[23].threshold_array_reg[23][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[23].threshold_array_reg[23][9]' (FDCE) to 'threshold_loop[23].threshold_array_reg[23][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[22].threshold_array_reg[22][7]' (FDCE) to 'threshold_loop[22].threshold_array_reg[22][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[22].threshold_array_reg[22][8]' (FDCE) to 'threshold_loop[22].threshold_array_reg[22][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[22].threshold_array_reg[22][9]' (FDCE) to 'threshold_loop[22].threshold_array_reg[22][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[21].threshold_array_reg[21][7]' (FDCE) to 'threshold_loop[21].threshold_array_reg[21][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[21].threshold_array_reg[21][8]' (FDCE) to 'threshold_loop[21].threshold_array_reg[21][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[21].threshold_array_reg[21][9]' (FDCE) to 'threshold_loop[21].threshold_array_reg[21][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[20].threshold_array_reg[20][7]' (FDCE) to 'threshold_loop[20].threshold_array_reg[20][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[20].threshold_array_reg[20][8]' (FDCE) to 'threshold_loop[20].threshold_array_reg[20][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[20].threshold_array_reg[20][9]' (FDCE) to 'threshold_loop[20].threshold_array_reg[20][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[19].threshold_array_reg[19][7]' (FDCE) to 'threshold_loop[19].threshold_array_reg[19][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[19].threshold_array_reg[19][8]' (FDCE) to 'threshold_loop[19].threshold_array_reg[19][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[19].threshold_array_reg[19][9]' (FDCE) to 'threshold_loop[19].threshold_array_reg[19][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[18].threshold_array_reg[18][7]' (FDCE) to 'threshold_loop[18].threshold_array_reg[18][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[18].threshold_array_reg[18][8]' (FDCE) to 'threshold_loop[18].threshold_array_reg[18][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[18].threshold_array_reg[18][9]' (FDCE) to 'threshold_loop[18].threshold_array_reg[18][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[17].threshold_array_reg[17][7]' (FDCE) to 'threshold_loop[17].threshold_array_reg[17][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[17].threshold_array_reg[17][8]' (FDCE) to 'threshold_loop[17].threshold_array_reg[17][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[17].threshold_array_reg[17][9]' (FDCE) to 'threshold_loop[17].threshold_array_reg[17][10]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[16].threshold_array_reg[16][7]' (FDCE) to 'threshold_loop[16].threshold_array_reg[16][8]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[16].threshold_array_reg[16][8]' (FDCE) to 'threshold_loop[16].threshold_array_reg[16][9]'
+INFO: [Synth 8-3886] merging instance 'threshold_loop[16].threshold_array_reg[16][9]' (FDCE) to 'threshold_loop[16].threshold_array_reg[16][10]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "wswu_cnt_max" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-7129] Port rst_n in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ractmem0wea in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ractmem1wea in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wactmem0wea in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wactmem1wea in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ractmem0addr[10] in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ractmem1addr[10] in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wactmem0addr[10] in module act_unimem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wactmem1addr[10] in module act_unimem is either unconnected or has no load
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ctrl/\wswu_oc_max_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ctrl/\wweg_oc_max_reg[8] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1451.492 ; gain = 344.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+(A*(B:0x12) or 0) | 11     | 5      | 11     | -      | 11     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:23 . Memory (MB): peak = 1471.375 ; gain = 364.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:25 . Memory (MB): peak = 1476.008 ; gain = 369.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:38 . Memory (MB): peak = 1496.332 ; gain = 389.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |weg_mem       |         1|
+|2     |act_mem_0     |         1|
+|3     |act_mem_1     |         1|
+|4     |threshold_mem |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |act_mem       |     2|
+|3     |threshold_mem |     1|
+|4     |weg_mem       |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:42 . Memory (MB): peak = 1501.012 ; gain = 394.500
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:37 . Memory (MB): peak = 1501.012 ; gain = 273.047
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:43 . Memory (MB): peak = 1501.012 ; gain = 394.500
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1501.012 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:50 . Memory (MB): peak = 1512.605 ; gain = 406.094
+INFO: [Common 17-1381] The checkpoint 'E:/Repository/SEU-ASIC-IOT-ECGAI/ECGAI_ver_3_0/accelerator/proj/ECGAI_ver_3_0/ECGAI_ver_3_0.runs/synth_1/tb_ecg_bnn_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tb_ecg_bnn_top_utilization_synth.rpt -pb tb_ecg_bnn_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  5 19:31:38 2023...

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1685964579">
+  <File Type="PA-TCL" Name="tb_ecg_bnn_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="tb_ecg_bnn_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="tb_ecg_bnn_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="tb_ecg_bnn_top.vds"/>
+  <File Type="RDS-UTIL" Name="tb_ecg_bnn_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tb_ecg_bnn_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="tb_ecg_bnn_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tb_ecg_bnn_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="tb_ecg_bnn_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/act_mem_0/act_mem_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/act_unimem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/act_unimem.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/ctrl.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/ctrl_a.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/ctrl_a.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/ctrl_pe.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/ctrl_pe.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/ctrl_w.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/ctrl_w.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/ecg_bnn_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/ecg_bnn_top.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/pe.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/pe.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/pe_array.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/pe_array.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/pooling.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/pooling.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/swu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/swu.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/weg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/weg.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/sim/tb_ecg_bnn_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../sim/tb_ecg_bnn_top.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/axi_lit_inist.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/axi_lit_inist.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/accelerator/rtl/ecg_bnn_axi_lite_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/ecg_bnn_axi_lite_top.v"/>
+        <Attr Name="ImportTime" Val="1685881521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../data/threshold_mem.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../data/act_mem_0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../data/weight_mem.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tb_ecg_bnn_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="act_mem_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="threshold_mem"/>
+  <BlockFileSet Type="BlockSrcs" Name="weg_mem"/>
+</GenRun>
