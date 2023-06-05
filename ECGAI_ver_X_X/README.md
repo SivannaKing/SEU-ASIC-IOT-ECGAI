@@ -1,1 +1,2 @@
-# ECGAI_ver_1_0
+# ECGAI_ver_X_X
+example folder
